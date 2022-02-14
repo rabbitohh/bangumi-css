@@ -1,7 +1,9 @@
-# bangumi-css-
+# bangumi-css
+大概也不会有人看吧我就随便写一点  
 本人的第一次开源，奉献给番组计划  
 感谢yonjar大佬提供的部分代码  
 感谢度娘告诉我这么多  
 
 可使用stylus里的导入功能使用本样式，覆盖了（大概是）bangumi的全部网页？可能对1920\*1080以外的屏幕不太友好，欢迎来找我反馈，可在bangumi上pm我。
-我的bangumi主页：https://bgm.tv/user/615400
+我的bangumi主页：https://bgm.tv/user/615400  
+由于我启用了部分组件，可能对部分bangumi页面支持不是很好，但应该大丈夫（小圣杯的页面我是优化过的，~~因为我曾是一名XSB~~）
