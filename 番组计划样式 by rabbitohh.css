@@ -1,0 +1,326 @@
+@-moz-document domain("bgm.tv"), domain("bangumi.tv") {
+span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]::after {
+	content: "人家的秘密都被你看光了>人<";
+	position: absolute;
+	right: 0;
+	color: #555;
+	background-color: #fff;
+	box-shadow: #555 2px 2px 1px;
+	display: block;
+	white-space: nowrap;
+}
+}
+
+@-moz-document regexp("https?://bgm.tv/") {
+.wrapperNeue
+{
+   content: '';
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-image: url("https://upload.cc/i1/2022/02/11/syDiqP.jpg");
+	background-size: cover;
+	filter: blur(0px);
+}
+.column
+{
+    opacity: 0.8;
+}
+
+#headerNeue2
+{
+    background: #fff;
+    margin: auto;
+    background: rgba(255, 255, 255,0.7);
+}
+.headerNeue2
+{
+    top: -1px;
+}
+.halfPage.sort.ui-draggable
+{
+   background: rgba(255, 255, 255,0.9); 
+}
+.sidePanelHome
+{
+    background: rgba(255, 255, 255,.1);
+}
+#home_calendar
+{
+    background: rgba(255, 255, 255,0.7);
+}
+
+}
+
+@-moz-document regexp("^https?://(bgm|bangumi).tv/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm).+"), regexp("^https?://bgm.tv/(real|anime|book|game|music|index)/.+"), regexp("^https?://(bgm|bangumi).tv/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group)") {
+/* 背景毛玻璃化 */
+body::after {
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url("https://lain.bgm.tv/pic/photo/l/95/f7/615400_h6Zk6.jpg");
+    opacity:0.7;
+	background-size: cover;
+    filter: blur(10px);
+	z-index: -1;
+}
+
+.item.even.clearit{
+   opacity:0.8;
+}
+ul#browserItemList
+{
+    
+   background: rgba(255, 255, 255,0.7); 
+}
+.avatar {
+       color: #fff; 
+    }
+div.quote{
+    color:white;
+}
+.mainWrapper,
+#comment_box .text, #comment_box .text_pm,
+.line_odd,
+.line_even,
+ul.line_list_music li.cat,
+ul.line_list li.cat{
+	background: rgba(255, 255, 255, .35);
+	padding: 5px;
+}
+#headerSubject div.subjectNav,
+#headerSubject h1 {
+    background: #fff;
+    margin: auto;
+    width: 75.6%;
+    opacity: 0.85;
+    background: rgba(255, 255, 255, .7);
+    padding-left:5%;
+    padding-top:15px;
+}
+
+div.section_line,
+ul.browserList li.even,
+div#footer ul#footerLinks,
+textarea.reply,
+ul.browserList li.item,
+ul#infobox li,
+ul.groupsLine li,
+div.subject_tag_section,
+table td.even,
+ul.browserCoverMedium li.sep,
+div.subjectFilter,
+div.subjectFilter ul.grouped,
+#browserTools,
+ul.browserFull li.even,
+ul.browserFull li.item,
+input.inputtext
+{
+	border: none;
+	background: transparent;
+}
+
+.column
+{
+    opacity: 0.8; 
+    
+}
+div.subject_section
+{
+    color:white;
+}
+#headerNeue2
+{
+    margin: auto;
+    background: rgba(255, 255, 255, .8);
+}
+tr.even
+{
+    opacity: 0.65;
+}
+.modifyTool
+{
+    opacity: 0.9;
+}
+#footer
+{
+    background: rgba(255, 255, 255, .8);
+}
+
+.temples.tab_page_item.tab_page_item_0
+{
+    
+    background: rgba(255, 255, 255, .65);
+}
+.tab_button
+{
+    color:white;
+}
+#grailBox2
+{
+    background: rgba(255, 255, 255, .65);
+}
+ul.timelineTabs
+{
+    background: rgba(255, 255, 255, .65);
+}
+#headerProfile
+{
+    width:80.6%;
+    margin:auto;
+   opacity: 0.7; 
+}
+.mainWrapper
+{
+    width:80%;
+    margin:auto;
+}
+.columns.clearit
+{
+    margin:auto;
+}
+
+#columnB
+{
+    background: rgba(255, 255, 255, .75);
+}
+#pageHeader{
+    background: rgba(255, 255, 255, .9);
+}
+#comment_list
+{
+    background: rgba(255, 255, 255, .5);
+    
+}
+.light_even.row_reply.clearit
+{
+    background: rgba(255, 255, 255, .4);
+}
+#header
+{
+    background: rgba(255, 255, 255, .35);
+}
+q
+{
+    color:	#909090;
+}
+a.btnGreenSmall.rr
+{
+    background: rgba(30, 181, 176, .47);
+}
+a.btnRedSmall.rr
+{
+    background: rgba(200, 106, 106, .49);
+}
+span.tip_i
+{
+    color:rgb(83, 79, 104);
+}
+span.count
+{
+    
+    
+    filter: invert(100);
+    filter: saturate(0);
+    
+    /*filter: grayscale(100%);*/
+}
+tbody{
+    background: rgba(255, 255, 255, .8);
+}
+.grp_box.clearit
+{
+    background:rgba(255,255,255,.6);
+}
+#main.png_bg
+{
+    background:rgba(255,255,255,.35);
+    margin: auto;
+    width: 80%;
+}
+tbody
+{
+    background:rgba(255,255,255,.35);
+    
+}
+ul#browserItemList
+{
+    background:rgba(255,255,255,.35);
+}
+.intro
+{
+    opacity:0.9;
+}
+
+}
+
+@-moz-document regexp("^https?://(bgm|bangumi).tv/(group)/.+/members") {
+.clearit
+{
+    color:#FFFFFF;
+}
+.columns.clearit
+{
+    background: rgba(255, 255, 255, .3);
+}
+}
+
+@-moz-document regexp("^https?://(bgm|bangumi).tv/subject.+") {
+img.cover
+{
+   height:68%;
+    width:68%;
+}
+img.cover:hover
+{
+    
+    height:95%;
+    width:95%;
+}
+#cluetip
+{
+    opacity:0.85;
+}
+}
+
+@-moz-document regexp("^https?://(bgm|bangumi).tv/(person|character).+") {
+.cover[src^="//lain.bgm.tv/pic/crt"]
+{
+    height:68%;
+    width:68%;
+}
+.cover[src^="//lain.bgm.tv/pic/crt"]:hover
+{
+    
+    height:95%;
+    width:95%;
+}
+}
+
+@-moz-document regexp("^https?://(bgm|bangumi).tv/(index).+") {
+h1
+{
+    margin-left:15%;
+}
+}
+
+@-moz-document regexp("^https?://(bgm|bangumi).tv/subject/[0-9].+"), regexp("^https?://(bgm|bangumi).tv/(person|character).+") {
+h1
+{
+    text-align: center;
+}
+}
+
+@-moz-document url-prefix("https://bgm.tv/subject/topic"), url-prefix("https://bgm.tv/notify"), url-prefix("https://bgm.tv/settings"), domain("https://bgm.tv/group") {
+h1
+{
+    margin-left:7%;
+}
+ul.secTab.rr
+{
+    opacity:0.7;
+}
+}
