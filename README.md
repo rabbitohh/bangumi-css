@@ -1,5 +1,5 @@
 # bangumi-css
-[![Downloads](https://img.shields.io/badge/Downloads-364-orange.svg)](https://userstyles.org/styles/139310/bangumi-tv)
+[![Downloads](https://github.com/rabbitohh/bangumi-css/blob/main/%E7%95%AA%E7%BB%84%E8%AE%A1%E5%88%92%E6%A0%B7%E5%BC%8F%20by%20rabbitohh.css)
 ![Last commit](https://img.shields.io/github/last-commit/rabbitohh/bangumi-css)
 ![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css)
 大概也不会有人看吧我就随便写一点  
