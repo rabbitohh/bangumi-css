@@ -1,4 +1,7 @@
 # bangumi-css
+[![Downloads](https://img.shields.io/badge/Downloads-364-orange.svg)](https://userstyles.org/styles/139310/bangumi-tv)
+![Last commit](https://img.shields.io/github/last-commit/rabbitohh/bangumi-css)
+![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css)
 大概也不会有人看吧我就随便写一点  
 初发布日为情人节，~~我可是要跟code过一辈子的![bgm38](https://bgm.tv/img/smiles/tv/15.gif)~~  
 本人的第一次开源，奉献给番组计划  
