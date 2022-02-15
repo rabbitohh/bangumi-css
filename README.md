@@ -3,7 +3,7 @@
 [![userstyles](https://img.shields.io/badge/Install%20with%20userstyle-1-blue.svg)](https://userstyles.world/style/3225/bangumi)
 ![Last commit](https://img.shields.io/github/last-commit/rabbitohh/bangumi-css)
 ![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css)
-<img src="https://user-images.githubusercontent.com/96970233/153983533-91dda87e-cef3-4f85-928d-babb02a50c53.png" width="500" align="right">
+<img src="https://user-images.githubusercontent.com/96970233/153986079-15422cd6-f7dc-4a70-a67e-990051edb10d.png" width="550" align="right">
 
 ## 开源感想（？
 大概也不会有人看吧我就随便写一点  
@@ -36,4 +36,4 @@ bangumi讨论帖：https://bgm.tv/rakuen/topic/group/367774
 <img src="https://user-images.githubusercontent.com/96970233/153983526-f88578ac-f788-4f51-a7b0-308710d352af.png" width="800">
 <img src="https://user-images.githubusercontent.com/96970233/153983530-04750d66-6c52-40e1-839b-8f2bc5465eed.png" width="800">
 <img src="https://user-images.githubusercontent.com/96970233/153986071-60d735b9-389a-4a70-83ab-2d81d09037f6.png" width="800">
-<img src="https://user-images.githubusercontent.com/96970233/153986079-15422cd6-f7dc-4a70-a67e-990051edb10d.png" width="800">
+<img src="https://user-images.githubusercontent.com/96970233/153983533-91dda87e-cef3-4f85-928d-babb02a50c53.png" width="800">
