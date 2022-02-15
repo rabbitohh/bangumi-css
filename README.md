@@ -26,6 +26,7 @@
 [先下个stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)  
 然后下载css文件  
 然后在stylus里点一下新建样式，然后点导入，把css的内容复制进去就好了  
+或者你也可以在安装stylus后点击readme最上方的Install with userstyle直接使用
 
 ## find me  
 我的bangumi主页：https://bgm.tv/user/615400  
