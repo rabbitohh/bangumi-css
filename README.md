@@ -23,9 +23,9 @@
 关灯模式下慎用，因为会丑![bgm38](https://bgm.tv/img/smiles/tv/15.gif)
 
 ## 使用方法  
-[先下个stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-然后下载css文件
-然后在stylus里点一下新建样式，然后点导入，把css的内容复制进去就好了
+[先下个stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)  
+然后下载css文件  
+然后在stylus里点一下新建样式，然后点导入，把css的内容复制进去就好了  
 
 ## find me  
 我的bangumi主页：https://bgm.tv/user/615400  
