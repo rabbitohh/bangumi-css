@@ -1,4 +1,5 @@
-@-moz-document domain("bgm.tv"), domain("bangumi.tv") {
+@-moz-document domain("bgm.tv"), domain("bangumi.tv"), domain("chii.in") {
+/*把[mask]变为真正的马赛克（这段不是我写的）*/
 span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]::after {
 	content: "人家的秘密都被你看光了>人<";
 	position: absolute;
@@ -9,16 +10,18 @@ span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]::aft
 	display: block;
 	white-space: nowrap;
 }
+
 }
 
-@-moz-document regexp("https?://bgm.tv/") {
+@-moz-document regexp("https?://(bgm.tv|bangumi.tv|chii.in)/") {
+/*首页样式优化*/
 .wrapperNeue
 {
    content: '';
 	height: 100%;
 	width: 100%;
 	position: relative;
-	background-image: url("https://pic.imgdb.cn/item/620a64042ab3f51d91f0c895.jpg");
+	background-image: url("https://pic.imgdb.cn/item/620a64042ab3f51d91f0c895.jpg");/*可以通过更改这个链接替换主页背景（推荐使用高清竖图，要不然大概率会卡住）*/
 	background-size: cover;
 	filter: blur(0px);
 }
@@ -29,7 +32,7 @@ span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]::aft
 
 #headerNeue2
 {
-    background: #fff;
+    /*background: #fff;*/
     margin: auto;
     background: rgba(255, 255, 255,0.7);
 }
@@ -49,11 +52,24 @@ span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]::aft
 {
     background: rgba(255, 255, 255,0.7);
 }
-
+/*img.willian-retina-img-fix.willian-size-48
+{
+	height:80px;
+    width:60px;
+}*/
+#TB_window
+{
+	z-index:9999;
+}
 }
 
-@-moz-document regexp("^https?://(bgm|bangumi).tv/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm).+"), regexp("^https?://bgm.tv/(real|anime|book|game|music|index)/.+"), regexp("^https?://(bgm|bangumi).tv/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group)") {
-/* 背景毛玻璃化 */
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm|mono|magi).+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(real|anime|book|game|music|index)/.+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group|pm|mono|character|person)") {
+/*其他页面样式优化*/
+div.codeHighlight
+{
+	backdrop-filter: blur(10px);
+	opacity: 0.7;
+}
 body::after {
 	content: '';
 	height: 100%;
@@ -61,7 +77,7 @@ body::after {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-image: url("https://lain.bgm.tv/pic/photo/l/95/f7/615400_h6Zk6.jpg");
+	background-image: url("https://lain.bgm.tv/pic/photo/l/95/f7/615400_h6Zk6.jpg");/*可以通过更改这个链接替换其他页面的背景（推荐使用横图）*/
     opacity:0.7;
 	background-size: cover;
     filter: blur(10px);
@@ -93,11 +109,15 @@ ul.line_list li.cat{
 }
 #headerSubject div.subjectNav,
 #headerSubject h1 {
-    background: #fff;
     margin: auto;
     width: 75.6%;
     opacity: 0.85;
     background: rgba(255, 255, 255, .7);
+	
+	
+	backdrop-filter: blur(10px);
+	
+	
     padding-left:5%;
     padding-top:15px;
 }
@@ -142,6 +162,9 @@ div.subject_section
 {
     margin: auto;
     background: rgba(255, 255, 255, .8);
+	backdrop-filter: blur(5px);
+	z-index: 9;
+
 }
 tr.even
 {
@@ -199,7 +222,6 @@ ul.timelineTabs
 #comment_list
 {
     background: rgba(255, 255, 255, .5);
-    
 }
 .light_even.row_reply.clearit
 {
@@ -258,26 +280,58 @@ ul#browserItemList
 }
 .intro
 {
-    opacity:0.9;
+    opacity:0.97;
 }
 div[style="width:800px; margin:0 auto; overflow:hidden"]
 {
 	transform:translate(0, 10%);
 }
+div#collect_title
+{
+	opacity: 0;
+	position: fixed;
+}
+textarea#content
+{
+	opacity: 0.7;
+	backdrop-filter: blur(10px);
+}
+ul
+{
+	z-index: 99;
+}
+div.eden_rec_box
+{
+	background: rgba(255,255,255,0.5);
+}
+div.clearit.ll[style="width:270px;"],
+div.ll[style="margin-left:10px;width:270px;"]
+{
+	background:rgba(255,255,255,0.5);
+	opacity: 0.8;
+}
+.columnsApp.clearit
+{
+	margin-top:5px;
+	margin-bottom:100px;
+	background: rgba(255,255,255,0.5);
+}
+.magiHeader
+{
+	background: rgba(255,255,255,0.35);
+}
 }
 
-@-moz-document regexp("^https?://(bgm|bangumi).tv/(group)/.+/members") {
-.clearit
-{
-    color:#FFFFFF;
-}
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(group)/.+/members") {
+/*小组成员页面细节优化*/
 .columns.clearit
 {
     background: rgba(255, 255, 255, .3);
 }
 }
 
-@-moz-document regexp("^https?://(bgm|bangumi).tv/subject.+") {
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject.+") {
+/*条目、角色、人物页鼠标移动到封面上会放大*/
 img.cover
 {
    height:68%;
@@ -295,7 +349,8 @@ img.cover:hover
 }
 }
 
-@-moz-document regexp("^https?://(bgm|bangumi).tv/(person|character).+") {
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(person|character).+") {
+/*封面放大的bug排除*/
 .cover[src^="//lain.bgm.tv/pic/crt"]
 {
     height:68%;
@@ -309,21 +364,24 @@ img.cover:hover
 }
 }
 
-@-moz-document regexp("^https?://(bgm|bangumi).tv/(index).+") {
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(index).+") {
+/*目录页标题右移*/
 h1
 {
     margin-left:15%;
 }
 }
 
-@-moz-document regexp("^https?://(bgm|bangumi).tv/subject/[0-9].+"), regexp("^https?://(bgm|bangumi).tv/(person|character).+") {
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9].+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(person|character).+") {
+/*角色、人物、条目页标题右移*/
 h1
 {
     text-align: center;
 }
 }
 
-@-moz-document url("https://bgm.tv/help/bbcode"), url-prefix("https://bgm.tv/subject/topic"), regexp("^https://(bgm.tv|bangumi.tv|chii.in)/(anime|settings|notify|music|book|game|about|wiki).+"), regexp("^https://(bgm.tv|bangumi.tv|chii.in)/(group|anime|settings|notify|music|book|game|calendar|timeline|about|wiki)") {
+@-moz-document regexp("https://(bgm.tv|bangumi.tv|chii.in)/help/bbcode"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/subject/topic.+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(anime|settings|notify|music|book|game|about|wiki).+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(dev|group|anime|settings|notify|music|book|game|calendar|timeline|about|wiki)") {
+/*目录以外的页面标题右移*/
 h1
 {
     margin-left:7%;
