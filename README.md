@@ -2,6 +2,8 @@
 [![Downloads](https://img.shields.io/github/downloads/rabbitohh/bangumi-css/total?style=flat-square)](https://github.com/rabbitohh/bangumi-css/releases)
 ![Last commit](https://img.shields.io/github/last-commit/rabbitohh/bangumi-css)
 ![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css)
+![GLZIdFOwhgeaAYT](https://user-images.githubusercontent.com/96970233/153983533-91dda87e-cef3-4f85-928d-babb02a50c53.png)
+
 大概也不会有人看吧我就随便写一点  
 初发布日为情人节，~~我可是要跟code过一辈子的![bgm38](https://bgm.tv/img/smiles/tv/15.gif)~~  
 本人的第一次开源，奉献给番组计划  
@@ -13,4 +15,9 @@
 关灯模式下慎用，因为会丑![bgm38](https://bgm.tv/img/smiles/tv/15.gif)
 
 我的bangumi主页：https://bgm.tv/user/615400  
-bangumi讨论帖：https://bgm.tv/rakuen/topic/group/367774
+bangumi讨论帖：https://bgm.tv/rakuen/topic/group/367774  
+
+预览图：
+![vb2MfH81VQTskRS](https://user-images.githubusercontent.com/96970233/153983520-ad389a6b-78a4-4ead-94a6-2e813edd999a.png)
+![kSEf3yWsAidLnHZ](https://user-images.githubusercontent.com/96970233/153983526-f88578ac-f788-4f51-a7b0-308710d352af.png)
+![dvGNa1UAqLRuiQ2](https://user-images.githubusercontent.com/96970233/153983530-04750d66-6c52-40e1-839b-8f2bc5465eed.png)
