@@ -1,5 +1,6 @@
 # bangumi-css
 [![Downloads](https://img.shields.io/github/downloads/rabbitohh/bangumi-css/total?style=flat-square)](https://github.com/rabbitohh/bangumi-css/releases)
+[![userstyles](https://img.shields.io/badge/userstyles-0-orange)](https://userstyles.world/style/3225/bangumi)
 ![Last commit](https://img.shields.io/github/last-commit/rabbitohh/bangumi-css)
 ![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css)
 
