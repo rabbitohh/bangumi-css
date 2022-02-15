@@ -117,12 +117,18 @@ div.subjectFilter ul.grouped,
 #browserTools,
 ul.browserFull li.even,
 ul.browserFull li.item,
+.cell.name.medium.ll,
+div.cell.ll,
+.line_list.user_list,
 input.inputtext
 {
 	border: none;
 	background: transparent;
 }
-
+div.line.clearit::after
+{
+	opacity:0;
+}
 .column
 {
     opacity: 0.8; 
@@ -254,7 +260,10 @@ ul#browserItemList
 {
     opacity:0.9;
 }
-
+div[style="width:800px; margin:0 auto; overflow:hidden"]
+{
+	transform:translate(0, 10%);
+}
 }
 
 @-moz-document regexp("^https?://(bgm|bangumi).tv/(group)/.+/members") {
@@ -314,7 +323,7 @@ h1
 }
 }
 
-@-moz-document url-prefix("https://bgm.tv/subject/topic"), url-prefix("https://bgm.tv/notify"), url-prefix("https://bgm.tv/settings"), domain("https://bgm.tv/group") {
+@-moz-document url("https://bgm.tv/help/bbcode"), url-prefix("https://bgm.tv/subject/topic"), regexp("^https://(bgm.tv|bangumi.tv|chii.in)/(anime|settings|notify|music|book|game|about|wiki).+"), regexp("^https://(bgm.tv|bangumi.tv|chii.in)/(group|anime|settings|notify|music|book|game|calendar|timeline|about|wiki)") {
 h1
 {
     margin-left:7%;
