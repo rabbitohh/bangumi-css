@@ -1,11 +1,10 @@
 # bangumi-css
-[![Downloads](https://img.shields.io/github/downloads/rabbitohh/bangumi-css/total?style=flat-square)](https://github.com/rabbitohh/bangumi-css/releases)
+[![Downloads](https://img.shields.io/github/downloads/rabbitohh/bangumi-css/total?style=flat-square)](https://github.com/rabbitohh/bangumi-css/releases)  
 ![Last commit](https://img.shields.io/github/last-commit/rabbitohh/bangumi-css)
 ![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css)
-![GLZIdFOwhgeaAYT](https://user-images.githubusercontent.com/96970233/153983533-91dda87e-cef3-4f85-928d-babb02a50c53.png)
 
 大概也不会有人看吧我就随便写一点  
-初发布日为情人节，~~我可是要跟code过一辈子的![bgm38](https://bgm.tv/img/smiles/tv/15.gif)~~  
+初发布日为情人节，~~我可是要跟code过一辈子的![bgm38](https://bgm.tv/img/smiles/tv/15.gif)~~  ![GLZIdFOwhgeaAYT](https://user-images.githubusercontent.com/96970233/153983533-91dda87e-cef3-4f85-928d-babb02a50c53.png)
 本人的第一次开源，奉献给番组计划  
 感谢yonjar大佬提供的部分代码  
 感谢度娘告诉我这么多  
