@@ -343,15 +343,14 @@ div.ll[style="margin-left:10px;width:270px;"]
 img.cover
 {
    height:68%;
-    width:68%;
+	width:68%;
+	transition: all .5s;/*此行与第13行可调整动画速度*/
 }
 img.cover:hover
 {
     
-   /* height:95%;
-    width:95%;*/
-	z-index: 999999;
-	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+   height:95%;
+	width:95%;
 	transition: all .5s;
 
 }
