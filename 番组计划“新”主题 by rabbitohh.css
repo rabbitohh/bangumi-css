@@ -34,7 +34,8 @@ span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]::aft
 {
     /*background: #fff;*/
     margin: auto;
-    background: rgba(255, 255, 255,0.7);
+    /*background: rgba(255, 255, 255,0.7);*/
+	background: #f4f5f7d1;
 }
 .headerNeue2
 {
@@ -70,7 +71,8 @@ div.codeHighlight
 	backdrop-filter: blur(10px);
 	opacity: 0.7;
 }
-body::after {
+body::after
+{
 	content: '';
 	height: 100%;
 	width: 100%;
@@ -78,26 +80,17 @@ body::after {
 	top: 0;
 	left: 0;
 	background-image: url("https://lain.bgm.tv/pic/photo/l/95/f7/615400_h6Zk6.jpg");/*可以通过更改这个链接替换其他页面的背景（推荐使用横图）*/
-    opacity:0.7;
+	opacity:0.7;
 	background-size: cover;
-    filter: blur(10px);
+	filter: blur(10px);
 	z-index: -1;
 }
 
-.item.even.clearit{
+.item.even.clearit
+{
    opacity:0.8;
 }
-ul#browserItemList
-{
-    
-   background: rgba(255, 255, 255,0.7); 
-}
-.avatar {
-       color: #fff; 
-    }
-div.quote{
-    color:white;
-}
+
 .mainWrapper,
 #comment_box .text, #comment_box .text_pm,
 .line_odd,
@@ -107,21 +100,29 @@ ul.line_list li.cat{
 	background: rgba(255, 255, 255, .35);
 	padding: 5px;
 }
-#headerSubject div.subjectNav,
-#headerSubject h1 {
-    margin: auto;
-    width: 75.6%;
-    opacity: 0.85;
-    background: rgba(255, 255, 255, .7);
-	
-	
+/*#headerSubject div.subjectNav,*/
+#headerSubject,
+div.mainWrapper{
+	margin: auto;
+	/*标注*/
 	backdrop-filter: blur(10px);
-	
-	
-    padding-left:5%;
-    padding-top:15px;
+	padding-top:15px;
 }
-
+#headerSubject
+{
+	background: rgba(255, 255, 255, .6);
+	width:80.6%;
+}
+#headerSubject div.subjectNav
+{
+	margin: auto;
+	background: rgba(255, 255, 255, 0);
+	border: none;
+}
+subject_section.clearit
+{
+	background: rgba(255, 255, 255, .67);
+}
 div.section_line,
 ul.browserList li.even,
 div#footer ul#footerLinks,
@@ -144,6 +145,10 @@ input.inputtext
 {
 	border: none;
 	background: transparent;
+}
+div#footer ul#footerLinks
+{
+	opacity: 0.9;
 }
 div.line.clearit::after
 {
@@ -168,7 +173,7 @@ div.subject_section
 }
 tr.even
 {
-    opacity: 0.65;
+	opacity: 0.65;
 }
 .modifyTool
 {
@@ -204,8 +209,10 @@ ul.timelineTabs
 }
 .mainWrapper
 {
-    width:80%;
-    margin:auto;
+	/*标注*/
+   /* margin:auto;*/
+	background: rgba(255,255,255,0.3);
+	width: 80%
 }
 .columns.clearit
 {
@@ -217,7 +224,8 @@ ul.timelineTabs
     background: rgba(255, 255, 255, .75);
 }
 #pageHeader{
-    background: rgba(255, 255, 255, .9);
+    background: rgba(255, 255, 255, 0);
+
 }
 #comment_list
 {
@@ -340,8 +348,12 @@ img.cover
 img.cover:hover
 {
     
-    height:95%;
-    width:95%;
+   /* height:95%;
+    width:95%;*/
+	z-index: 999999;
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+	transition: all .5s;
+
 }
 #cluetip
 {
