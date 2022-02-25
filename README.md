@@ -7,7 +7,7 @@
 ![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css?style=flat-square)
 ![code-size](https://img.shields.io/github/languages/code-size/rabbitohh/bangumi-css?color=coral&style=flat-square)
 ![stars](https://img.shields.io/github/stars/rabbitohh/bangumi-css?color=seagreen&style=flat-square)
-![activity](https://img.shields.io/github/commit-activity/m/rabbitohh/bangumi-css&style=flat-square)
+![activity](https://img.shields.io/github/commit-activity/m/rabbitohh/bangumi-css?style=flat-square)
 ## 开源感想（？
 大概也不会有人看吧我就随便写一点  
 初发布日为情人节，~~我可是要跟code过一辈子的~~![bgm38](https://bgm.tv/img/smiles/tv/15.gif)   
