@@ -1,5 +1,5 @@
 # bangumi-css
-<img src="https://socialify.git.ci/rabbitohh/bangumi-css/image?description=1&font=Bitter&language=1&name=1&owner=1&pattern=Circuit%20Board&theme=Light"  align="right">  
+![bangumi-css](https://socialify.git.ci/rabbitohh/bangumi-css/image?description=1&font=Bitter&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Frabbitohh%2Fbangumi-css%2F90500f13513b200a8814f3cd511bb402218c303b%2Fbangumi%2520by-euai%2520from-iconfont.svg&name=1&owner=1&pattern=Circuit%20Board&theme=Light)
   
 [![Downloads](https://img.shields.io/github/downloads/rabbitohh/bangumi-css/total?color=teal&style=flat-square)](https://github.com/rabbitohh/bangumi-css/releases)
 [![userstyles](https://img.shields.io/badge/Install%20with%20userstyle-10-green.svg?style=flat-square)](https://userstyles.world/style/3225/bangumi)
@@ -7,7 +7,7 @@
 ![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css?style=flat-square)
 ![code-size](https://img.shields.io/github/languages/code-size/rabbitohh/bangumi-css?color=coral&style=flat-square)
 ![stars](https://img.shields.io/github/stars/rabbitohh/bangumi-css?color=seagreen&style=flat-square)
-![activity](https://img.shields.io/github/commit-activity/m/rabbitohh/bangumi-css?color=maroon&style=flat-square)
+![activity](https://img.shields.io/github/commit-activity/m/rabbitohh/bangumi-css&style=flat-square)
 ## 开源感想（？
 大概也不会有人看吧我就随便写一点  
 初发布日为情人节，~~我可是要跟code过一辈子的~~![bgm38](https://bgm.tv/img/smiles/tv/15.gif)   
