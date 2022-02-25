@@ -3,7 +3,7 @@
 [![userstyles](https://img.shields.io/badge/Install%20with%20userstyle-4-blue.svg)](https://userstyles.world/style/3225/bangumi)
 ![Last commit](https://img.shields.io/github/last-commit/rabbitohh/bangumi-css)
 ![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css)
-<img src="https://user-images.githubusercontent.com/96970233/154068750-09cef5e7-3cd5-4f32-b485-506459cbd10c.png" width="550" align="right">
+<img src="https://socialify.git.ci/rabbitohh/bangumi-css/image?description=1&font=Bitter&language=1&name=1&owner=1&pattern=Circuit%20Board&theme=Light" width="550" align="right">
 
 ## 开源感想（？
 大概也不会有人看吧我就随便写一点  
