@@ -36,8 +36,6 @@
 bangumi讨论帖：https://bgm.tv/rakuen/topic/group/367774  
 
 ## 预览图  
-<img src="https://user-images.githubusercontent.com/96970233/153983520-ad389a6b-78a4-4ead-94a6-2e813edd999a.png" width="800">
-<img src="https://user-images.githubusercontent.com/96970233/153983526-f88578ac-f788-4f51-a7b0-308710d352af.png" width="800">
-<img src="https://user-images.githubusercontent.com/96970233/153983530-04750d66-6c52-40e1-839b-8f2bc5465eed.png" width="800">
-<img src="https://user-images.githubusercontent.com/96970233/153986071-60d735b9-389a-4a70-83ab-2d81d09037f6.png" width="800">
-<img src="https://user-images.githubusercontent.com/96970233/153983533-91dda87e-cef3-4f85-928d-babb02a50c53.png" width="800">
+我很懒所以只放一张，原谅我罢（）  
+![Screenshot_2.png](https://s2.loli.net/2022/02/26/aVIvLZ9nTNOGfpo.png)
+  
