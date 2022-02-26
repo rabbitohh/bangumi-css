@@ -3,8 +3,8 @@
   
 [![Downloads](https://img.shields.io/github/downloads/rabbitohh/bangumi-css/total?color=teal&style=flat-square)](https://github.com/rabbitohh/bangumi-css/releases)
 [![userstyles](https://img.shields.io/badge/Install%20with%20userstyle-10-green.svg?style=flat-square)](https://userstyles.world/style/3225/bangumi)
-[![Last commit](https://img.shields.io/github/last-commit/rabbitohh/bangumi-css?style=flat-square)](https://github.com/rabbitohh/bangumi-css/releases)
-![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css?style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/rabbitohh/bangumi-css?style=flat-square)
+[![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css?style=flat-square)](https://github.com/rabbitohh/bangumi-css/releases)
 ![code-size](https://img.shields.io/github/languages/code-size/rabbitohh/bangumi-css?color=coral&style=flat-square)
 ![stars](https://img.shields.io/github/stars/rabbitohh/bangumi-css?color=seagreen&style=flat-square)
 ![activity](https://img.shields.io/github/commit-activity/m/rabbitohh/bangumi-css?style=flat-square)
