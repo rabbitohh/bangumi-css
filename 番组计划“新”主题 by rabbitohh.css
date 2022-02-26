@@ -46,13 +46,88 @@ span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]::aft
 {
 	border: none;
 }
-.column
+#prgManagerMain,input.inputtext
+{
+	background: rgba(255, 255, 255,.6);
+}
+#cloumnSubjectInfo a.prgCheckIn, ul#prgSubjectList li a.prgCheckIn
+{
+	background: rgba(255, 255, 255,0.5);
+}
+#prgManagerHeader
+{
+	background: rgba(255, 255, 255,0.7);
+	border: none;
+}
+#cloumnSubjectInfo div.header
+{
+	background: rgba(255, 255, 255,0);
+	border: none;
+}
+#cloumnSubjectInfo div.moreEp,ul#prgSubjectList.list li.sep, ul#prgSubjectList.full li.sep
+{
+	background: rgba(255, 255, 255, 0);
+	border: none;
+}
+ul#prgSubjectList.full
+{
+	background: rgba(255, 255, 255,0);
+}
+ul#prgSubjectList.full li p.listProgress span
+{
+	background: rgba(65, 180, 218, .4);
+	border: none;
+}
+ul#prgSubjectList.full li,div.sidePanelHome h2
+{
+	border: none;
+}
+#home_calendar,ul.calendarMini div.coverList
+{
+	background: rgba(255, 255, 255,.6);
+	border: none;
+}
+small.grey
+{
+	color: #a3a3a3;
+}
+ul.calendarMini li,ul.calendarMini li.Sat
+{
+	background: rgba(255, 255, 255,0);
+	color: grey;
+}
+.halfPage.sort.ui-draggable,textarea.quick
+{
+	background: rgba(255, 255, 255,.65);
+}
+.line_odd,.line_even
+{
+	background: rgba(255, 255, 255,0);
+	border: none;
+}
+#footer #footerLinks
+{
+   background: rgba(255, 255, 255, .6);
+}
+#columnTimelineInnerWrapper,#columnTimelineInnerWrapper ul.timelineTabs,element.style,div.SidePanelMini
+{
+	background: rgba(255, 255, 255,.4);
+}
+#columnTimelineInnerB
+{
+	background-color: rgba(255, 255, 255,.4);
+}
+#columnTimelineInnerB div.TsukkmiBox
+{
+	background: rgba(255, 255, 255,0);
+}
+/*.column
 {
     opacity: 0.8;
 }
 }
 
-@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm|mono|magi).+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(real|anime|book|game|music|index)/.+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group|pm|mono|character|person)") {
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm|mono|magi|).+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(real|anime|book|game|music|index)/.+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group|pm|mono|character|person)") {
 /*其他页面样式优化*/
 body::after
 {
@@ -68,7 +143,9 @@ body::after
 	filter: blur(10px);
 	z-index: -1;
 }
-
+div.light_odd,
+div.light_even,
+.borderNeue,
 #headerSubject div.subjectNav,
 div.navSubTabsWrapper,
 div.section_line,
@@ -90,27 +167,50 @@ ul.browserFull li.item,
 div.cell.ll,
 .line_list.user_list,
 input.inputtext,
-div.subject_section
+div.subject_section,
+table.topic_list tr.header,
+ul.collect li.item,
+ul.collect li.cat,
+div.sub_reply_bg,
+#entry_list div.item,
+div.SimpleSidePanel h2
 {
 	border: none;
+	box-shadow: none;
 	background: rgba(0, 0, 0, 0);
 }
-
-
 
 #headerNeue2,div.codeHighlight
 {
 	backdrop-filter: blur(3px);
 }
 
+a.tip_i, a.tip_i:link, a.tip_i:visited, a.tip_i:active,a.reply-plus-one
+{
+	color: #686868;
+}
+a.reply-plus-one
+{
+	border: 1px solid #686868;
+}
+div.re_info,div.re_info a,.tip_j
+{
+	color: #686868;
+}
+#headerProfile div.subjectNav
+{
+	border: none;
+	margin-bottom: 0px;
+}
 #headerSubject,div.mainWrapper
 {
-	margin: auto;
+	margin-left: auto;
 	padding-top:15px;
 }
 #headerProfile,.mainWrapper,#headerSubject,#main.png_bg
 {
-    width:81%;
+	width:81%;
+	margin: auto;
 }
 .navSubTabsWrapper
 {
@@ -159,9 +259,27 @@ div[style="width:800px; margin:0 auto; overflow:hidden"]/*乐园*/
 	margin-top:5px;
 	margin-bottom:100px;
 }
+div.SidePanel h2, div.SidePanelLow h2
+{
+	text-shadow: none;
+}
+#sliderContainer
+{
+	opacity: 0;
+	position: fixed;
+}
+#eden_tpc_list
+{
+	margin-top: -1px;
+}
 }
 
 @-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm|mono|magi).+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(real|anime|book|game|music|index)/.+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group|pm|mono|character|person)") {
+/*透明化*/
+body
+{
+	background: rgba(255, 255, 255, .19);
+}
 .magiHeader
 {
 	background: rgba(255, 255, 255, 0.35);
@@ -184,11 +302,19 @@ tbody
 }
 ul#browserItemList
 {
-   background: rgba(255, 255, 255, .35);
+   background: rgba(255, 255, 255, .0);
+}
+div.infobox .modifyTool
+{
+	background: rgba(255, 255, 255, .5);
 }
 #main.png_bg
 {
    background: rgba(255, 255, 255, .35);
+}
+ul.timelineTabs li a.focus, ul.timelineTabs li a.top_focus
+{
+	background: rgba(255, 255, 255, .7);
 }
 .grp_box.clearit
 {
@@ -196,7 +322,7 @@ ul#browserItemList
 }
 #columnB
 {
-   background: rgba(255, 255, 255, .75);
+   background: rgba(255, 255, 255, .0);
 }
 #pageHeader
 {
@@ -204,11 +330,11 @@ ul#browserItemList
 }
 #comment_list
 {
-   background: rgba(255, 255, 255, .5);
+   background: rgba(255, 255, 255, .4);
 }
 .light_even.row_reply.clearit
 {
-   background: rgba(255, 255, 255, .4);
+   background: rgba(255, 255, 255, .0);
 }
 #header
 {
@@ -275,6 +401,30 @@ a.btnRedSmall.rr
 {
    background: rgba(255, 255, 255, .75);
 }
+div.grp_box
+{
+	background: rgba(255, 255, 255, .5);
+}
+div.SidePanel, div.SidePanelLow
+{
+	background: rgba(255, 255, 255, .5);
+}
+table.topic_list tr.header
+{
+	background: rgba(255, 255, 255, .5);
+}
+#headerProfile div.subjectNav
+{
+	background: rgba(255, 255, 255, .35);
+}
+#headerProfile .headerContainer
+{
+	background: rgba(255, 255, 255, .5);
+}
+blockquote.intro
+{
+	background: rgba(255, 255, 255, .5);
+}
 table.topic_list tr.even
 {
 	background-color: #ffffff5e;
@@ -283,29 +433,13 @@ tr.odd
 {
 	background-color: #f9f9f942;
 }
-div.clearit.ll[style="width:270px;"],div.ll[style="margin-left:10px;width:270px;"]
-{
-	background: rgba(255, 255, 255, 0.3);
-}
-div.clearit.ll[style="width:270px;"],div.ll[style="margin-left:10px;width:270px;"]
-{
-	opacity: 0.8;
-}
 div.codeHighlight
 {
 	opacity: 0.7;
 }
-#headerProfile
-{
-	opacity: 0.7; 
-}
 textarea#content
 {
 	opacity: 0.7;
-}
-.intro
-{
-   opacity: 0.97;
 }
 .item.even.clearit
 {
@@ -314,18 +448,18 @@ textarea#content
 .modifyTool
 {
    opacity: 0.9;
-}
+}/*
 .column
 {
    opacity: 0.8;   
-}
+}*/
 div#footer ul#footerLinks
 {
 	opacity: 0.9;
 }
 #cluetip
 {
-    opacity: 0.85;
+	opacity: 0.85;
 }
 }
 
@@ -396,5 +530,13 @@ h1
 ul.secTab.rr
 {
     opacity:0.7;
+}
+}
+
+@-moz-document regexp("https://(bgm.tv|bangumi.tv|chii.in)/user.+") {
+/*个人主页细节*/
+#headerSubject, div.mainWrapper
+{
+	margin-top: -2px;
 }
 }
