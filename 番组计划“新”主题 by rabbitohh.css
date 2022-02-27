@@ -48,7 +48,7 @@ span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]::aft
 }
 #prgManagerMain,input.inputtext
 {
-	background: rgba(255, 255, 255,.6);
+	background: rgba(255, 255, 255,.7);
 }
 #cloumnSubjectInfo a.prgCheckIn, ul#prgSubjectList li a.prgCheckIn
 {
@@ -91,14 +91,21 @@ small.grey
 {
 	color: #a3a3a3;
 }
-ul.calendarMini li,ul.calendarMini li.Sat
+ul.calendarMini li,
+ul.calendarMini li.Sat,
+ul.calendarMini li.Mon,
+ul.calendarMini li.Tue,
+ul.calendarMini li.Wed,
+ul.calendarMini li.Thu,
+ul.calendarMini li.Fri,
+ul.calendarMini li.Sun
 {
 	background: rgba(255, 255, 255,0);
 	color: grey;
 }
 .halfPage.sort.ui-draggable,textarea.quick
 {
-	background: rgba(255, 255, 255,.65);
+	background: rgba(255, 255, 255,.4);
 }
 .line_odd,.line_even
 {
@@ -143,6 +150,15 @@ body::after
 	filter: blur(10px);
 	z-index: -1;
 }
+.user_list.line_list li,
+#columnSearch,
+a.cover:hover img.cover,
+img.cover,
+table.settings td,
+#columnSearchA ul li a,
+#columnSearchA ul li a:hover, #columnSearchA ul li a.selected,
+#wrapperNeue #columnSubjectBrowserA #browserTools,
+ul.browserFull li.item.even,
 div.light_odd,
 div.light_even,
 .borderNeue,
@@ -173,13 +189,23 @@ ul.collect li.item,
 ul.collect li.cat,
 div.sub_reply_bg,
 #entry_list div.item,
+#columnSearchA ul,
 div.SimpleSidePanel h2
 {
 	border: none;
 	box-shadow: none;
 	background: rgba(0, 0, 0, 0);
 }
-
+.panelProgress.book
+{
+	border-radius:7px 7px 7px 7px;
+	border-color: rgba(153, 153, 153, .59);
+}
+img.cover,img.cover::hover
+{
+	padding: 0px;
+	border: 0px;
+}
 #headerNeue2,div.codeHighlight
 {
 	backdrop-filter: blur(3px);
@@ -197,6 +223,20 @@ div.re_info,div.re_info a,.tip_j
 {
 	color: #686868;
 }
+#searchHomeBox ul.cat li a, .indexCatBox ul.cat li a
+{
+	    color: #7d7d7d;
+
+}
+img.cover
+{
+	border-radius: 8px 8px 8px 8px;
+	margin-left: 10px;
+}
+ul.browserFull li.item img.cover
+{
+	max-width: 120px;
+}
 #headerProfile div.subjectNav
 {
 	border: none;
@@ -207,7 +247,7 @@ div.re_info,div.re_info a,.tip_j
 	margin-left: auto;
 	padding-top:15px;
 }
-#headerProfile,.mainWrapper,#headerSubject,#main.png_bg
+#headerProfile,.mainWrapper,#headerSubject,#main.png_bg,#columnSearch,div#main
 {
 	width:81%;
 	margin: auto;
@@ -246,6 +286,11 @@ ul
 {
 	z-index: 99;
 }
+table.forumtable
+{
+	border: 2px;
+	border-color: white;
+}
 .columns.clearit
 {
     margin:auto;
@@ -280,13 +325,41 @@ body
 {
 	background: rgba(255, 255, 255, .19);
 }
+div#main
+{
+	background: rgba(255, 255, 255, 0.4);
+}
+table.forumtable
+{
+	background: rgba(255, 255, 255, 0.4);
+}
+table.forumtable tr.alt td
+{
+	background: rgba(255, 255, 255, 0);
+}
+#columnSearchA ul,#columnSearchA ul li.root
+{
+	background: rgba(255, 255, 255, 0.4);
+}
+#columnSearch
+{
+	background: rgba(255, 255, 255, 0.4);
+}
 .magiHeader
+{
+	background: rgba(255, 255, 255, 0.35);
+}
+.panelProgress.book
 {
 	background: rgba(255, 255, 255, 0.35);
 }
 div#ChartWarpper
 {
 	background: rgba(255, 255, 255, 0);
+}
+#columnSearchA ul li a:hover, #columnSearchA ul li a.selected
+{
+	background: #f09199ad
 }
 .columnsApp.clearit
 {
@@ -308,6 +381,10 @@ div.infobox .modifyTool
 {
 	background: rgba(255, 255, 255, .5);
 }
+#columnNotifyA div.even
+{
+	background: rgba(255, 255, 255, .4);
+}
 #main.png_bg
 {
    background: rgba(255, 255, 255, .35);
@@ -327,6 +404,26 @@ ul.timelineTabs li a.focus, ul.timelineTabs li a.top_focus
 #pageHeader
 {
    background: rgba(255, 255, 255, 0);
+}
+ul.browserFull li.item.even
+{
+	background: rgba(255, 255, 255, .0);
+}
+#columnSubjectBrowserB .sideInner
+{
+	background: rgba(255, 255, 255, .5);
+}
+#columnSubjectBrowserB .sideInner h2
+{
+	background: rgba(255, 255, 255, 0);
+}
+select.form
+{
+	background: rgba(255, 255, 255, .5);
+}
+input.btnPink, input.btnGray
+{
+	background:#ff4a5952;
 }
 #comment_list
 {
@@ -433,26 +530,22 @@ tr.odd
 {
 	background-color: #f9f9f942;
 }
-div.codeHighlight
+ul.browserFull li.item span.rank
 {
-	opacity: 0.7;
+	background: #02a3fb96
 }
 textarea#content
 {
 	opacity: 0.7;
 }
-.item.even.clearit
+div.collectBlock p.collectModify
 {
-   opacity: 0.8;
+	opacity: 0.75;
 }
 .modifyTool
 {
    opacity: 0.9;
-}/*
-.column
-{
-   opacity: 0.8;   
-}*/
+}
 div#footer ul#footerLinks
 {
 	opacity: 0.9;
@@ -471,17 +564,17 @@ div#footer ul#footerLinks
 }
 }
 
-@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject.+") {
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/.+") {
 /*条目、角色、人物页鼠标移动到封面上会放大*/
 img.cover
 {
+	margin: auto;
    height:68%;
 	width:68%;
 	transition: all .5s;/*此行与第13行可调整动画速度*/
 }
 img.cover:hover
 {
-    
    height:95%;
 	width:95%;
 	transition: all .5s;
@@ -490,18 +583,50 @@ img.cover:hover
 
 }
 
+@-moz-document url-prefix("https://bgm.tv/subject_search") {
+/*搜索页鼠标移动到封面上会放大*/
+img.cover
+{
+	display:-webkit-box;
+   -webkit-box-pack:center;
+	margin: auto;
+   height:68%;
+	width:68%;
+	transition: all .5s;/*此行与第13行可调整动画速度*/
+}
+.columns.clearit
+{
+	display:-webkit-box;
+   -webkit-box-pack:center;
+}
+img.cover:hover
+{
+	margin: auto;
+	/*margin-right: 10px;*/
+   height:90%;
+	width:90%;
+	transition: all .5s;
+}
+#columnSearchA
+{
+	margin-right: 0;
+}
+}
+
 @-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(person|character).+") {
 /*封面放大的bug排除*/
 .cover[src^="//lain.bgm.tv/pic/crt"]
 {
-    height:68%;
-    width:68%;
+   height:68%;
+   width:68%;
+	transition: all .5s;
 }
 .cover[src^="//lain.bgm.tv/pic/crt"]:hover
 {
     
-    height:95%;
-    width:95%;
+   height:95%;
+	width:95%;
+	transition: all .5s;
 }
 }
 
