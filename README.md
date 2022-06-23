@@ -37,5 +37,7 @@ bangumi讨论帖：https://bgm.tv/rakuen/topic/group/367774
 
 ## 预览图  
 我很懒所以只放一张，原谅我罢（）  
-![Screenshot_2.png](https://s2.loli.net/2022/02/26/aVIvLZ9nTNOGfpo.png)
+<a href="https://imgtu.com/i/jC02R0"><img src="https://s1.ax1x.com/2022/06/23/jC02R0.png" alt="jC02R0.png" border="0"></a>
+<a href="https://imgtu.com/i/jC0gGq"><img src="https://s1.ax1x.com/2022/06/23/jC0gGq.png" alt="jC0gGq.png" border="0"></a>
+<a href="https://imgtu.com/i/jC0RzV"><img src="https://s1.ax1x.com/2022/06/23/jC0RzV.png" alt="jC0RzV.png" border="0"></a>
   
