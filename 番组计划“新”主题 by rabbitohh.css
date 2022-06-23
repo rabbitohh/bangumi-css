@@ -11,23 +11,31 @@ span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]::aft
 	display: block;
 	white-space: nowrap;
 }
+}
 
+@-moz-document domain("bgm.tv"), domain("bangumi.tv"), domain("chii.in") {
+/*背景修改*/
+html::after
+{
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.75;
+	background-image: url("https://rabbitohh.vercel.app/Messenger.jpeg");
+	/*background-image: url("https://lain.bgm.tv/pic/photo/l/95/f7/615400_h6Zk6.jpg");*//*旧版背景*/
+	background-size: cover;
+	z-index: -1;
+}
 }
 
 @-moz-document regexp("https?://(bgm.tv|bangumi.tv|chii.in)/") {
 /*首页样式优化*/
-.wrapperNeue
-{
-   content: '';
-	height: 100%;
-	width: 100%;
-	position: relative;
-	background-image: url("https://s2.loli.net/2022/03/06/HxXDS3wRTzG2erZ.jpg");/*可以通过更改这个链接替换主页背景（推荐使用高清竖图，要不然大概率会卡住）*/
-	background-size: cover;
-}
 #headerNeue2
 {
-	background: rgba(255, 255, 255,0.7);
+	background: rgba(255, 255, 255,0.75);
 	border: none;
 }
 a.chl:hover,a.chl
@@ -88,7 +96,7 @@ ul#prgSubjectList.full li,div.sidePanelHome h2
 }
 #home_calendar,ul.calendarMini div.coverList
 {
-	background: rgba(255, 255, 255,.6);
+	background: rgba(255, 255, 255, .31);
 	border: none;
 }
 small.grey
@@ -120,9 +128,13 @@ ul.calendarMini li.Sun
 {
    background: rgba(255, 255, 255, .6);
 }
-#columnTimelineInnerWrapper,#columnTimelineInnerWrapper ul.timelineTabs,element.style,div.SidePanelMini
+#columnTimelineInnerWrapper,#columnTimelineInnerWrapper ul.timelineTabs
 {
 	background: rgba(255, 255, 255,.4);
+}
+div.SidePanelMini.clearit
+{
+	opacity: 0.7;
 }
 #columnTimelineInnerB
 {
@@ -135,25 +147,11 @@ ul.calendarMini li.Sun
 /*.column
 {
     opacity: 0.8;
-}
+}*/
 }
 
 @-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm|mono|magi).+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(real|anime|book|game|music|index)/.+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group|pm|mono|character|person|index)") {
 /*其他页面样式优化*/
-body::after
-{
-	content: '';
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-image: url("https://lain.bgm.tv/pic/photo/l/95/f7/615400_h6Zk6.jpg");/*可以通过更改这个链接替换其他页面的背景（推荐使用横图）*/
-	opacity:0.7;
-	background-size: cover;
-	filter: blur(10px);
-	z-index: -1;
-}
 #timeline h4.Header,
 ul.timeline li,
 ul.tagList li,
@@ -206,8 +204,12 @@ ul#crtRelateSubjects li.old,
 ul.ajaxSubjectList li
 {
 	border: none;
-	box-shadow: none;
 	background: rgba(0, 0, 0, 0);
+}
+#headerSubject h1
+{
+	margin-top:0;
+	padding-top: 10px;
 }
 #eden_tpc_list ul li.line_odd, #eden_tpc_list ul li.line_even
 {
@@ -265,7 +267,7 @@ div.SimpleSidePanel
 }
 img.cover
 {
-	border-radius: 6px 6px 6px 6px;
+	border-radius: 6px;
 	/*margin-left: 10px;*/
 }
 #headerProfile div.subjectNav
@@ -273,11 +275,7 @@ img.cover
 	border: none;
 	margin-bottom: 0px;
 }
-#headerSubject,div.mainWrapper
-{
-	margin-left: auto;
-	padding-top:15px;
-}
+
 #headerProfile,.mainWrapper,#headerSubject,#main.png_bg,#columnSearch,div#main
 {
 	width:81%;
@@ -312,6 +310,7 @@ span.tip_i
 #headerNeue2
 {
 	z-index: 9;
+	box-shadow: none;
 }
 ul
 {
@@ -384,6 +383,14 @@ div#main
 #user_home div.userSynchronize
 {
 	background: rgba(255, 255, 255, 0.6);
+}
+ul.sideEpList li.even
+{
+	background: rgba(255, 255, 255, 0.4);
+}
+ul.sideEpList li.cur 
+{
+	background: rgba(146, 167, 255, .77);
 }
 #columnTimelineA #SayInput
 {
@@ -577,7 +584,7 @@ a.btnRedSmall.rr
 }
 #headerNeue2
 {
-   background: rgba(255, 255, 255, .75);
+   background: rgba(255, 255, 255, .7);
 }
 div.grp_box
 {
@@ -648,19 +655,20 @@ img.cover
 	margin: auto;
    height:68%;
 	width:68%;
+	box-shadow: none;
 	transition: all .5s;/*此行与第13行可调整动画速度*/
 }
 img.cover:hover
 {
-   height:95%;
-	width:95%;
+   box-shadow: 0px 0px 12px black;
+	-webkit-box-shadow: 0px 0px 12px black;
 	transition: all .5s;
 
 }
 
 }
 
-@-moz-document url-prefix("https://bgm.tv/subject_search") {
+@-moz-document url-prefix("https://(bgm.tv|bangumi.tv|chii.in)/subject_search") {
 /*搜索页鼠标移动到封面上会放大*/
 ul.browserFull li.item img.cover
 {
@@ -668,7 +676,7 @@ ul.browserFull li.item img.cover
 }
 img.cover
 {
-	
+	box-shadow: none;
 	display:-webkit-box;
    -webkit-box-pack:center;
 	margin: auto;
@@ -683,10 +691,8 @@ img.cover
 }
 img.cover:hover
 {
-	margin: auto;
-	/*margin-right: 10px;*/
-   height:90%;
-	width:90%;
+   box-shadow: 0px 0px 12px black;
+	-webkit-box-shadow: 0px 0px 12px black;
 	transition: all .5s;
 }
 #columnSearchA
@@ -697,17 +703,16 @@ img.cover:hover
 
 @-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(person|character).+") {
 /*封面放大的bug排除*/
-.cover[src^="//lain.bgm.tv/pic/crt"]
+img.cover[src^="//lain.bgm.tv/pic/crt"]
 {
-   height:68%;
-   width:68%;
+	box-shadow: none;
 	transition: all .5s;
 }
-.cover[src^="//lain.bgm.tv/pic/crt"]:hover
+img.cover[src^="//lain.bgm.tv/pic/crt"]:hover
 {
     
-   height:95%;
-	width:95%;
+   box-shadow: 0px 0px 12px black;
+	-webkit-box-shadow: 0px 0px 12px black;
 	transition: all .5s;
 }
 }
@@ -721,14 +726,19 @@ h1
 }
 
 @-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9].+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(person|character).+") {
-/*角色、人物、条目页标题右移*/
+/*角色、人物、条目页标题居中*/
 h1
 {
     text-align: center;
 }
+#headerSubject,div.mainWrapper
+{
+	margin-left: auto;
+	padding-top:15px;
+}
 }
 
-@-moz-document regexp("https://(bgm.tv|bangumi.tv|chii.in)/help/bbcode"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/subject/topic.+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(anime|settings|notify|music|book|game|about|wiki|new_subject).+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(dev|group|anime|settings|notify|music|book|game|calendar|timeline|about|wiki)"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/index") {
+@-moz-document regexp("https://(bgm.tv|bangumi.tv|chii.in)/help/bbcode"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/subject/topic.+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(anime|settings|notify|music|book|game|about|wiki|new_subject).+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(dev|group|anime|settings|notify|music|book|game|calendar|timeline|about|wiki)"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/reply.+") {
 /*目录以外的页面标题右移*/
 h1
 {
@@ -740,11 +750,16 @@ ul.secTab.rr
 }
 }
 
-@-moz-document regexp("https://(bgm.tv|bangumi.tv|chii.in)/user/([0-9]|[a-z]|[_]){1,}/(blog|timeline|groups|friends|rev_friends)"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/user/([0-9]|[a-z]|[_]){1,}") {
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/user/([0-9]|[a-z]|[_]){1,}/(blog|timeline|groups|friends|rev_friends)#?"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/user/([0-9]|[a-z]|[_]){1,}") {
 /*个人主页细节*/
 #headerSubject, div.mainWrapper
 {
 	margin-top: -2px;
+}
+#headerSubject,div.mainWrapper
+{
+	margin-left: auto;
+	padding-top:15px;
 }
 #columnA
 {
@@ -767,4 +782,21 @@ ul.secTab.rr
 {
 	background: rgba(255, 255, 255,0);
 }
+}
+
+@-moz-document domain("bgm.tv"), domain("bangumi.tv"), domain("chii.in") {
+/*图片样式优化*/
+.pictureFrameGroup .overlay
+{
+	background: none;
+}
+img
+{
+	image-rendering: -webkit-optimize-contrast;
+	border-radius: 5px;
+	/*border-style: solid;
+	border-color: white;
+	border-width: 2px;*/
+}
+
 }
