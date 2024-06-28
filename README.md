@@ -26,10 +26,9 @@
 关灯模式下慎用，因为会丑![bgm38](https://bgm.tv/img/smiles/tv/15.gif)
 
 ## 使用方法  
+请注意 发行版已经很久没有更新了，请勿下载其中的代码
 [先下个stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)  
-然后下载css文件  
-然后在stylus里点一下新建样式，然后点导入，把css的内容复制进去就好了  
-或者你也可以在安装stylus后点击readme最上方的Install with userstyle直接使用
+点击readme最上方的Install with userstyle直接使用
 
 ## find me  
 我的bangumi主页：https://bgm.tv/user/615400  
