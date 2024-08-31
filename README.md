@@ -26,7 +26,7 @@
 关灯模式下慎用，因为会丑![bgm38](https://bgm.tv/img/smiles/tv/15.gif)
 
 ## 使用方法  
-请注意 发行版已经很久没有更新了，请勿下载其中的代码
+（请注意 发行版已经很久没有更新了，请勿下载其中的代码）  
 [先下个stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)  
 点击readme最上方的Install with userstyle直接使用
 
