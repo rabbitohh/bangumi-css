@@ -516,10 +516,9 @@ div#main
 	padding-left: 20px;
 }
 
-div.subject_section,
 .tab_button
 {
-	color: white;
+	color: #000;
 }
 span.count
 {
@@ -786,6 +785,18 @@ a.btnBlue, a.btnBlueSmall
 a.chiiBtn:hover
 {
 	box-shadow: none;
+}
+#show-diff-view-side-by-side
+{
+	width: 90%;
+}
+ul#infobox li.sub
+{
+	border:none;
+}
+ul#infobox li.sub_section
+{
+	border:none;
 }
 }
 
@@ -1202,10 +1213,10 @@ ul.sideTpcList .row:nth-child(odd),ul.sideTpcList .row:nth-child(2n)
 {
 	background: rgba(255, 255, 255, 0);
 }
-.mosaic-tile
+/*.mosaic-tile
 {
 	background:rgba(255, 255, 255, .4);
-}
+}*/
 rect[data-count="0"]
 {
 	fill:rgb(255, 255, 255);
@@ -1233,6 +1244,30 @@ a.btnBlue:hover, a.btnBlueSmall:hover
 input.inputBtn:hover, a.fancyBtn:hover
 {
 	background:rgba(255, 98, 130, .61);
+}
+.likes_grid .item
+{
+	background:rgba(255, 255, 255, .6);
+}
+textarea.quick
+{
+	background:rgba(255, 255, 255, .6);
+}
+textarea.quick:focus,textarea.reply:focus
+{
+	background:rgba(255, 255, 255, .8);
+}
+#show-diff-view-side-by-side
+{
+	background:rgba(255, 255, 255, .6);
+}
+.d2h-file-header,.d2h-code-side-linenumber
+{
+	background:rgba(255, 255, 255, .6);
+}
+ul#infobox li.group_section
+{
+	background:rgba(255, 255, 255, .4);
 }
 }
 
@@ -1321,8 +1356,60 @@ img.cover[src^="//lain.bgm.tv/pic/crt"]:hover
 }
 }
 
-@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9].+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(person|character).+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/group/my_reply"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(blog|real|mono|anime|book|music|game|group|index)"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/help/bbcode"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/subject/topic.+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(anime|settings|notify|music|book|game|about|wiki|new_subject|index|ep).+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(dev|group|anime|settings|notify|music|book|game|calendar|timeline|about|wiki)"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/reply.+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/.+/new_topic"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/topic/.+/edit") {
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}#;"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}/(collection|wish|doin|on_|drop).+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(person|character).+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(blog|real|mono|anime|book|music|game|group|index)"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/help/bbcode"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/subject/topic.+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(anime|settings|notify|music|book|game|about|wiki|new_subject|index|ep).+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/(dev|group|anime|settings|notify|music|book|game|calendar|timeline|about|wiki)"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/reply.+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/.+/new_topic"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/topic/.+/edit"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/(discover|all|my_topic|my_reply)"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/blog/create"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/blog/.+/edit"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}/(characters|ep|persons|comments.+|reviews|board|stats)"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}/topic/new") {
 /*标题居中*/
+#header
+{
+	padding: 20px;
+}
+h1
+{
+	display: block!important;
+	text-align: center;
+}
+#headerSubject,
+div.mainWrapper
+{
+	margin-left: auto;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+#headerSubject div.subjectNav
+{
+	width:100%;
+	height:40px;
+	text-align: center;
+}
+#headerSubject
+{
+	padding-bottom: 0px;
+}
+.subjectNav .navTabs
+{
+	
+	display: inline-block;
+	width:auto!important;
+	text-align: center;
+}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/blog/[0-9]{1,}"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/group/topic/[0-9]{1,}"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/group/topic/[0-9]{1,}#.+") {
+/*标题强制回归*/
+#headerSubject div.subjectNav
+{
+	width:100%;
+	height:40px;
+	text-align: left!important;
+}
+h1
+{
+	display: block!important;
+	text-align: left!important;
+}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9].+/(edit_detail|edit|upload_img|character|add_related/person|add_related/subject.+)") {
+/*wiki标题居中*/
 #header
 {
 	padding: 20px;
@@ -1343,19 +1430,43 @@ div.mainWrapper
 {
 	width:100%;
 	height:40px;
-	display: inline-block;
 	text-align: center!important;
 }
 #headerSubject
 {
-	height:83.3px;
+	height:73.3px;
 }
 .subjectNav .navTabs
 {
-	
 	display: inline-block;
 	width:auto!important;
 	text-align: center!important;
+}
+}
+
+@-moz-document regexp("https://(bgm.tv|bangumi.tv|chii.in)/wiki.+"), regexp("https://(bgm.tv|bangumi.tv|chii.in)/wiki") {
+#headerSubject
+{
+	height:105px!important;
+}
+ul.wikiStats li
+{
+	background: rgba(255,255,255,.5);
+	border:none;
+	box-shadow: none;
+	margin:3.5px;
+}
+ul.wikiScrollBlock
+{
+	border-radius: 10px;
+}
+.user_list .cell.name
+{
+	background: none;
+}
+#comment_box .text, #comment_box .text_pm, .comment_box
+{
+	background: rgba(255,255,255,.5);
 }
 }
 
@@ -1401,6 +1512,10 @@ ul.navTabs
 {
 	background: rgba(255, 255, 255, .5)!important;
 	border: none;
+}
+.mosaic-tile
+{
+	background: rgba(255, 255, 255, .4);
 }
 }
 
