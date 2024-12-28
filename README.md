@@ -24,7 +24,7 @@
      打开[github链接](https://github.com/rabbitohh/bangumi-css/raw/refs/heads/main/%E7%95%AA%E7%BB%84%E8%AE%A1%E5%88%92%E2%80%9C%E6%96%B0%E2%80%9D%E4%B8%BB%E9%A2%98%20by%20rabbitohh.user.css)，点击安装样式
 
 ## 自定义选项说明：
-![自定义背景示例](https://s2.loli.net/2024/12/20/wt4sDyflCEjrTFP.png) 
+![Screenshot_1.png](https://s2.loli.net/2024/12/28/okW35ws7Ojye4PU.png)
 1. “自定义背景”，修改内容即可实现自定义背景
 ```
 #afc9f0
