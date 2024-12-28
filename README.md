@@ -26,8 +26,10 @@
    - Firefox：[stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 
 2. 安装样式
-   - 方案一：使用userstylus打开[userstyles链接](https://userstyles.world/style/3225/bangumi)，点击install
-   - 方案二：使用github打开[github链接](https://github.com/rabbitohh/bangumi-css/raw/refs/heads/main/%E7%95%AA%E7%BB%84%E8%AE%A1%E5%88%92%E2%80%9C%E6%96%B0%E2%80%9D%E4%B8%BB%E9%A2%98%20by%20rabbitohh.user.css)，点击安装样式
+   - 方案一：使用userstylus  
+     打开[userstyles链接](https://userstyles.world/style/3225/bangumi)，点击install
+   - 方案二：使用github  
+     打开[github链接](https://github.com/rabbitohh/bangumi-css/raw/refs/heads/main/%E7%95%AA%E7%BB%84%E8%AE%A1%E5%88%92%E2%80%9C%E6%96%B0%E2%80%9D%E4%B8%BB%E9%A2%98%20by%20rabbitohh.user.css)，点击安装样式
 
 ## 自定义选项说明：
 ![自定义背景示例](https://s2.loli.net/2024/12/20/wt4sDyflCEjrTFP.png) 
