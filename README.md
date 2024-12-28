@@ -20,15 +20,30 @@
 感谢上苍  
   
 
-## 详细信息  
-可通过stylus里的导入功能使用本样式，覆盖了（大概是![bgm38](https://bgm.tv/img/smiles/tv/15.gif)）bangumi的全部网页。可能对1920\*1080以外的屏幕不太友好，欢迎来找我反馈，可在bangumi上pm我。  
-由于我启用了部分组件，可能对部分bangumi页面支持不是很好，但应该大丈夫（小圣杯的页面我是优化过的，~~因为我曾是一名XSB~~）  
-关灯模式下慎用，因为会丑![bgm38](https://bgm.tv/img/smiles/tv/15.gif)
+## 食用方法：
+1. 安装stylus
+   - Chrome扩展：[stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) / [stylus(Beta)](https://chromewebstore.google.com/detail/stylus-beta/apmmpaebfobifelkijhaljbmpcgbjbdo)
+   - Firefox：[stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 
-## 使用方法  
-（请注意 发行版已经很久没有更新了，请勿下载其中的代码）  
-[先下个stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)  
-点击readme最上方的Install with userstyle直接使用
+2. 安装样式
+   - 方案一：使用userstylus打开[userstyles链接](https://userstyles.world/style/3225/bangumi)，点击install
+   - 方案二：使用github打开[github链接](https://github.com/rabbitohh/bangumi-css/raw/refs/heads/main/%E7%95%AA%E7%BB%84%E8%AE%A1%E5%88%92%E2%80%9C%E6%96%B0%E2%80%9D%E4%B8%BB%E9%A2%98%20by%20rabbitohh.user.css)，点击安装样式
+
+## 自定义选项说明：
+![自定义背景示例](https://s2.loli.net/2024/12/20/wt4sDyflCEjrTFP.png) 
+1. “自定义背景”，修改内容即可实现自定义背景
+```
+#afc9f0
+```
+```
+url("https://lain.bgm.tv/pic/photo/l/95/f7/615400_h6Zk6.jpg")
+```
+```
+linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246))
+```
+
+2. “透明度”，取值越高，越不透明（当前试运行中，仅主页生效）
+
 
 ## find me  
 我的bangumi主页：https://bgm.tv/user/615400  
