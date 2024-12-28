@@ -9,15 +9,7 @@
 ![stars](https://img.shields.io/github/stars/rabbitohh/bangumi-css?color=seagreen&style=flat-square)
 ![activity](https://img.shields.io/github/commit-activity/m/rabbitohh/bangumi-css?style=flat-square)
 ## 开源感想（？
-大概也不会有人看吧我就随便写一点  
-初发布日为情人节，~~我可是要跟code过一辈子的~~![bgm38](https://bgm.tv/img/smiles/tv/15.gif)   
-本人的第一次开源，奉献给番组计划  
-感谢yonjar大佬提供的部分代码  
-感谢度娘告诉我这么多  
-感谢bangumi  
-感谢互联网  
-感谢计算机  
-感谢上苍  
+这里该说点什么呢？本来是自用的，后来写着写着就想到能不能分享出来给大家一起用。感谢yonjar大佬提供的部分代码，感谢每一位使用者。  
   
 
 ## 食用方法：
