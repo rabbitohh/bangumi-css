@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         番组计划“新”主题
-@version       2.1.1
-@namespace      https://userstyles.world/user/rabbitohh
+@version       2.1.2
+@namespace      https://bgm.tv/user/615400
 @description 	  想说的都在github里 https://github.com/rabbitohh/bangumi-css
 @author      	rabbitohh
 @license    	 MIT
@@ -148,88 +148,83 @@ domain("chii.in")
 	}
 }
 
-@-moz-document regexp("https?://(bgm.tv|bangumi.tv|chii.in)/")
-{
+@-moz-document regexp("https?://(bgm.tv|bangumi.tv|chii.in)/") {
 	/* 首页样式优化 */
-	#headerNeue2
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.7) / (1 + var(--bg-opacity) * 0.7)));
+	:root {
+		--0: 0;
+		--1: calc((var(--bg-opacity) * 0.1) / (1 + var(--bg-opacity) * 0.1 - 0.1));
+		--2: calc((var(--bg-opacity) * 0.2) / (1 + var(--bg-opacity) * 0.2 - 0.2));
+		--3: calc((var(--bg-opacity) * 0.3) / (1 + var(--bg-opacity) * 0.3 - 0.3));
+		--4: calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4 - 0.4));
+		--5: calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5 - 0.5));
+		--6: calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6 - 0.6));
+		--7: calc((var(--bg-opacity) * 0.7) / (1 + var(--bg-opacity) * 0.7 - 0.7));
+		--8: calc((var(--bg-opacity) * 0.8) / (1 + var(--bg-opacity) * 0.8 - 0.8));
+		--9: calc((var(--bg-opacity) * 0.9) / (1 + var(--bg-opacity) * 0.9 - 0.9));
+		--10: calc((var(--bg-opacity) * 1.0) / (1 + var(--bg-opacity) * 1.0 - 1.0));
+	}
+	#headerNeue2 {
+		background: rgba(255, 255, 255, var(--7));
 		border: none;
 		box-shadow: none;
 	}
 	a.chl:hover,
-	a.chl
-	{
+	a.chl {
 		transition: 0.5s;
 	}
-	.halfPage.sort.ui-draggable
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.9) / (1 + var(--bg-opacity) * 0.9)));
+	.halfPage.sort.ui-draggable {
+		background: rgba(255, 255, 255, var(--9));
 	}
-	.sidePanelHome
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	.sidePanelHome {
+		background: rgba(255, 255, 255, var(--0));
 	}
-	#home_calendar
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)));
+	#home_calendar {
+		background: rgba(255, 255, 255, var(--6));
 	}
-	.clearit.week
-	{
+	.clearit.week {
 		border: none;
 	}
 	#prgManagerMain,
-	input.inputtext
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.7) / (1 + var(--bg-opacity) * 0.7)));
+	input.inputtext {
+		background: rgba(255, 255, 255, var(--7));
 	}
 	#cloumnSubjectInfo a.prgCheckIn,
-	ul#prgSubjectList li a.prgCheckIn
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5)));
+	ul#prgSubjectList li a.prgCheckIn {
+		background: rgba(255, 255, 255, var(--0));
 	}
-	#prgManagerHeader
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.7) / (1 + var(--bg-opacity) * 0.7)));
+	#prgManagerHeader {
+		background: rgba(255, 255, 255, var(--7));
 		border: none;
 	}
-	#cloumnSubjectInfo div.header
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	#cloumnSubjectInfo div.header {
+		background: rgba(255, 255, 255, var(--0));
 		border: none;
 	}
 	#cloumnSubjectInfo div.moreEp,
 	ul#prgSubjectList.list li.sep,
-	ul#prgSubjectList.full li.sep
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	ul#prgSubjectList.full li.sep {
+		background: rgba(255, 255, 255, var(--0));
 		border: none;
 	}
-	ul#prgSubjectList.full
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	ul#prgSubjectList.full {
+		background: rgba(255, 255, 255, var(--0));
 	}
-	ul#prgSubjectList.full li p.listProgress span
-	{
-		background: rgba(65, 180, 218, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+	ul#prgSubjectList.full li p.listProgress span {
+		background: rgba(65, 180, 218, var(--4));
 		border: none;
 	}
 	ul#prgSubjectList.full li,
-	div.sidePanelHome h2
-	{
+	div.sidePanelHome h2 {
 		border: none;
 	}
 	#home_calendar,
-	ul.calendarMini div.coverList
-	{
+	ul.calendarMini div.coverList {
 		border: none;
 	}
-	ul.calendarMini div.coverList
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	ul.calendarMini div.coverList {
+		background: rgba(255, 255, 255, var(--0));
 	}
-	small.grey
-	{
+	small.grey {
 		color: #a3a3a3;
 	}
 	ul.calendarMini li,
@@ -239,163 +234,130 @@ domain("chii.in")
 	ul.calendarMini li.Wed,
 	ul.calendarMini li.Thu,
 	ul.calendarMini li.Fri,
-	ul.calendarMini li.Sun
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	ul.calendarMini li.Sun {
+		background: rgba(255, 255, 255, var(--0));
 		color: grey;
 		border: none;
 	}
 	.halfPage.sort.ui-draggable,
-	textarea.quick
-	{
+	textarea.quick {
 		padding-top: 5px;
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)));
+		background: rgba(255, 255, 255, var(--6));
 		border-radius: 10px;
 	}
 	.line_odd,
-	.line_even
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	.line_even {
+		background: rgba(255, 255, 255, var(--0));
 		border: none;
 	}
-	#footer #footerLinks
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)));
+	#footer #footerLinks {
+		background: rgba(255, 255, 255, var(--6));
 	}
 	#columnTimelineInnerWrapper,
-	#columnTimelineInnerWrapper ul.timelineTabs
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+	#columnTimelineInnerWrapper ul.timelineTabs {
+		background: rgba(255, 255, 255, var(--4));
 	}
-	div.SidePanelMini.clearit
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)))!important;
+	div.SidePanelMini.clearit {
+		background: rgba(255, 255, 255, var(--6))!important;
 	}
-	div.SidePanelMini.clearit.award2022
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 1) / (1 + var(--bg-opacity) * 1)))!important;
-		opacity: calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6));
+	div.SidePanelMini.clearit.award2022 {
+		background: rgba(255, 255, 255, var(--10))!important;
+		opacity: var(--6);
 	}
-	#columnTimelineInnerB
-	{
-		background-color: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+	#columnTimelineInnerB {
+		background-color: rgba(255, 255, 255, var(--4));
 	}
-	#columnTimelineInnerB div.TsukkmiBox
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	#columnTimelineInnerB div.TsukkmiBox {
+		background: rgba(255, 255, 255, var(--0));
 	}
-	#cloumnSubjectInfo div.infoWrapper_book div.header
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	#cloumnSubjectInfo div.infoWrapper_book div.header {
+		background: rgba(255, 255, 255, var(--0));
 		border: none;
 	}
-	hr.board
-	{
+	hr.board {
 		height: 0;
 	}
-	#introWrapper
-	{
+	#introWrapper {
 		background: none;
 		box-shadow: none;
 	}
-	#footer #footerLinks
-	{
+	#footer #footerLinks {
 		border-radius: 10px;
 	}
-	#timeline ul.subReply
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	#timeline ul.subReply {
+		background: rgba(255, 255, 255, var(--0));
 	}
 	input.inputBtn,
-	a.fancyBtn
-	{
-		background: rgba(56, 176, 207, calc((var(--bg-opacity) * 0.62) / (1 + var(--bg-opacity) * 0.62)));
+	a.fancyBtn {
+		background: rgba(56, 176, 207, var(--6));
 		border-radius: 10px;
 		border: none;
 	}
-	li.doujin
-	{
+	li.doujin {
 		z-index: -1;
 		position: fixed;
 		opacity: 0;
 	}
 	#columnHomeA div.sort h2.subtitle:hover,
-	#columnHomeB div.sort h2.subtitle:hover
-	{
+	#columnHomeB div.sort h2.subtitle:hover {
 		border-radius: 10px 10px 0 0;
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+		background: rgba(255, 255, 255, var(--4));
 	}
 
-	.ui-draggable
-	{
+	.ui-draggable {
 		padding-top: 5px;
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)));
+		background: rgba(255, 255, 255, var(--6));
 		border-radius: 10px;
 	}
-	.sort
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	.sort {
+		background: rgba(255, 255, 255, var(--0));
 	}
-	#header > small.grey
-	{
+	#header > small.grey {
 		color: white;
 	}
-	#timeline h4.Header
-	{
+	#timeline h4.Header {
 		border: none;
 	}
-	#timeline ul li.tml_item .card:not(.card_tiny)
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+	#timeline ul li.tml_item .card:not(.card_tiny) {
+		background: rgba(255, 255, 255, var(--4));
 	}
-	#timeline ul li.tml_item .card.card_tiny
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	#timeline ul li.tml_item .card.card_tiny {
+		background: rgba(255, 255, 255, var(--0));
 	}
-	#timeline ul li.tml_item .card.card_tiny .container
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+	#timeline ul li.tml_item .card.card_tiny .container {
+		background: rgba(255, 255, 255, var(--4));
 	}
-	#timeline ul li.tml_item .card.card_tiny .container:hover
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)));
+	#timeline ul li.tml_item .card.card_tiny .container:hover {
+		background: rgba(255, 255, 255, var(--6));
 	}
 	ul.sideTpcList .row:nth-child(odd),
-	ul.sideTpcList .row:nth-child(2n)
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	ul.sideTpcList .row:nth-child(2n) {
+		background: rgba(255, 255, 255, var(--0));
 	}
-	#timeline ul li.tml_item .comment
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5)));
+	#timeline ul li.tml_item .comment {
+		background: rgba(255, 255, 255, var(--5));
 		border: none;
 	}
-	#columnIntroB div.loginPanel
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5)));
+	#columnIntroB div.loginPanel {
+		background: rgba(255, 255, 255, var(--5));
 	}
-	#columnIntroB div.loginPanel dt
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	#columnIntroB div.loginPanel dt {
+		background: rgba(255, 255, 255, var(--0));
 		border: none;
 	}
-	#columnIntroB div.loginPanel dt input
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5)));
+		#columnIntroB div.loginPanel dt input {
+		background: rgba(255, 255, 255, var(--5));
 	}
 	textarea.quick:focus,
 	textarea.reply:focus,
-	textarea.reply
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5))) !important;
+	textarea.reply {
+		background: rgba(255, 255, 255, var(--5)) !important;
 	}
-	#navNeue2 #navMenuNeue li a.chl
-	{
-		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5)));
+	#navNeue2 #navMenuNeue li a.chl {
+		background: rgba(255, 255, 255, var(--5));
 	}
-	ul.sideTpcList .row:nth-child(odd),ul.sideTpcList .row:nth-child(2n),ul.timeline li
-	{
-		border:none;
+	ul.sideTpcList .row:nth-child(odd), ul.sideTpcList .row:nth-child(2n), ul.timeline li {
+		border: none;
 	}
 }
 @-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm|mono|magi).+"),
