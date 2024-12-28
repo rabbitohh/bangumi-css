@@ -1,0 +1,1734 @@
+/* ==UserStyle==
+@name         番组计划“新”主题
+@version       2.1.1
+@namespace      https://userstyles.world/user/rabbitohh
+@description 	  想说的都在github里 https://github.com/rabbitohh/bangumi-css
+@author      	rabbitohh
+@license    	 MIT
+@var text bg-custom "自定义背景" linear-gradient(to right, rgb(250, 187, 187), rgb(238, 130, 146))
+@var text bg-opacity "透明度 取值[0,+∞]" 1
+==/UserStyle== */
+@-moz-document domain("bgm.tv"),
+domain("bangumi.tv"),
+domain("chii.in")
+{
+	/*光标直接打开黑条 by@yonjar*/
+	span[style="background-color:#555;color:#555;border:1px solid #555;"]
+	{
+		box-shadow: #555 1px 1px 2px;
+		border-radius: 2px;
+	}
+	span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]
+	{
+		position: relative;
+		color: #fff!important;
+		transition: all .5s;
+	}
+	span:hover[style="background-color:#555;color:#555;border:1px solid #555;"]::after
+	{
+		content: "人家的秘密都被你看光了>人<";
+		position: absolute;
+		right: 0;
+		color: #555;
+		background-color: #fff;
+		box-shadow: #555 1px 1px 2px;
+		display: block;
+		white-space: nowrap;
+	}
+}
+
+@-moz-document domain("bgm.tv"),
+domain("bangumi.tv"),
+domain("chii.in")
+{
+	/*光标会让格子弹起，标签横展*/
+	ul.prg_list li:hover
+	{
+		margin-bottom: 5px;
+		display: block;
+		transition: .5s;
+		margin-top: -5px;
+		padding-top: 0px;
+	}
+	ul.prg_list li
+	{
+		margin-bottom: 0px;
+		display: block;
+		transition: .5s;
+		margin-top: 0px;
+	}
+	.tinyMode a.epBtnWatched:hover,
+	.tinyMode a.epBtnWatched:active,
+	a.sepBtnWatched:hover
+	{
+		border: 1px solid #00A8FF!important;
+		padding-top: 2px!important;
+		background-color: #407fd3;
+		transition: .5s;
+	}
+	.tinyMode a.epBtnUnknown:hover,
+	.tinyMode a.epBtnAir:hover,
+	.tinyMode a.epBtnAir:active,
+	a.sepBtnUnknown:hover,
+	a.sepBtnAir:hover
+	{
+		border: 1px solid #00A8FF!important;
+		padding-top: 2px!important;
+		background-color: #cddaed;
+		transition: .5s;
+	}
+	a.epBtnWatched:hover
+	{
+		border: 1px solid #00A8FF!important;
+		padding-top: 3px!important;
+		background-color: #407fd3;
+		transition: .5s;
+	}
+	a.epBtnUnknown:hover,
+	a.epBtnAir:hover
+	{
+		border: 1px solid #00A8FF!important;
+		padding-top: 3px!important;
+		background-color: #cddaed;
+		transition: .5s;
+	}
+	div.subject_tag_section a.l:hover
+	{
+		margin-left: 5px;
+		margin-right: 5px;
+		background: rgba(255, 255, 255, .7)!important;
+		color: #003d54;
+		transition: .5s;
+	}
+}
+
+@-moz-document domain("bgm.tv"),
+domain("bangumi.tv"),
+domain("chii.in")/*, domain("bgm38.tv")*/
+
+{
+	/*背景修改*/
+	html::after
+	{
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		opacity: 0.75;
+		background: var(--bg-custom);
+		background-size: cover;
+		z-index: -1;
+	}
+}
+
+@-moz-document domain("bgm.tv"),
+domain("bangumi.tv"),
+domain("chii.in")
+{
+	/*404页面修改*/
+	#headerNeue2
+	{
+		background: rgba(255, 255, 255, .7);
+		border: none;
+		box-shadow: none;
+	}
+	#footer #footerLinks
+	{
+		border-radius: 10px;
+	}
+	#footer #footerLinks
+	{
+		background: rgba(255, 255, 255, .6);
+	}
+	#navNeue2 #navMenuNeue li a.chl
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+}
+
+@-moz-document regexp("https?://(bgm.tv|bangumi.tv|chii.in)/")
+{
+	/* 首页样式优化 */
+	#headerNeue2
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.7) / (1 + var(--bg-opacity) * 0.7)));
+		border: none;
+		box-shadow: none;
+	}
+	a.chl:hover,
+	a.chl
+	{
+		transition: 0.5s;
+	}
+	.halfPage.sort.ui-draggable
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.9) / (1 + var(--bg-opacity) * 0.9)));
+	}
+	.sidePanelHome
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	}
+	#home_calendar
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)));
+	}
+	.clearit.week
+	{
+		border: none;
+	}
+	#prgManagerMain,
+	input.inputtext
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.7) / (1 + var(--bg-opacity) * 0.7)));
+	}
+	#cloumnSubjectInfo a.prgCheckIn,
+	ul#prgSubjectList li a.prgCheckIn
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5)));
+	}
+	#prgManagerHeader
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.7) / (1 + var(--bg-opacity) * 0.7)));
+		border: none;
+	}
+	#cloumnSubjectInfo div.header
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+		border: none;
+	}
+	#cloumnSubjectInfo div.moreEp,
+	ul#prgSubjectList.list li.sep,
+	ul#prgSubjectList.full li.sep
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+		border: none;
+	}
+	ul#prgSubjectList.full
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	}
+	ul#prgSubjectList.full li p.listProgress span
+	{
+		background: rgba(65, 180, 218, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+		border: none;
+	}
+	ul#prgSubjectList.full li,
+	div.sidePanelHome h2
+	{
+		border: none;
+	}
+	#home_calendar,
+	ul.calendarMini div.coverList
+	{
+		border: none;
+	}
+	ul.calendarMini div.coverList
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	}
+	small.grey
+	{
+		color: #a3a3a3;
+	}
+	ul.calendarMini li,
+	ul.calendarMini li.Sat,
+	ul.calendarMini li.Mon,
+	ul.calendarMini li.Tue,
+	ul.calendarMini li.Wed,
+	ul.calendarMini li.Thu,
+	ul.calendarMini li.Fri,
+	ul.calendarMini li.Sun
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+		color: grey;
+		border: none;
+	}
+	.halfPage.sort.ui-draggable,
+	textarea.quick
+	{
+		padding-top: 5px;
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)));
+		border-radius: 10px;
+	}
+	.line_odd,
+	.line_even
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+		border: none;
+	}
+	#footer #footerLinks
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)));
+	}
+	#columnTimelineInnerWrapper,
+	#columnTimelineInnerWrapper ul.timelineTabs
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+	}
+	div.SidePanelMini.clearit
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)))!important;
+	}
+	div.SidePanelMini.clearit.award2022
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 1) / (1 + var(--bg-opacity) * 1)))!important;
+		opacity: calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6));
+	}
+	#columnTimelineInnerB
+	{
+		background-color: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+	}
+	#columnTimelineInnerB div.TsukkmiBox
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	}
+	#cloumnSubjectInfo div.infoWrapper_book div.header
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+		border: none;
+	}
+	hr.board
+	{
+		height: 0;
+	}
+	#introWrapper
+	{
+		background: none;
+		box-shadow: none;
+	}
+	#footer #footerLinks
+	{
+		border-radius: 10px;
+	}
+	#timeline ul.subReply
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	}
+	input.inputBtn,
+	a.fancyBtn
+	{
+		background: rgba(56, 176, 207, calc((var(--bg-opacity) * 0.62) / (1 + var(--bg-opacity) * 0.62)));
+		border-radius: 10px;
+		border: none;
+	}
+	li.doujin
+	{
+		z-index: -1;
+		position: fixed;
+		opacity: 0;
+	}
+	#columnHomeA div.sort h2.subtitle:hover,
+	#columnHomeB div.sort h2.subtitle:hover
+	{
+		border-radius: 10px 10px 0 0;
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+	}
+
+	.ui-draggable
+	{
+		padding-top: 5px;
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)));
+		border-radius: 10px;
+	}
+	.sort
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	}
+	#header > small.grey
+	{
+		color: white;
+	}
+	#timeline h4.Header
+	{
+		border: none;
+	}
+	#timeline ul li.tml_item .card:not(.card_tiny)
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+	}
+	#timeline ul li.tml_item .card.card_tiny
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	}
+	#timeline ul li.tml_item .card.card_tiny .container
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4)));
+	}
+	#timeline ul li.tml_item .card.card_tiny .container:hover
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6)));
+	}
+	ul.sideTpcList .row:nth-child(odd),
+	ul.sideTpcList .row:nth-child(2n)
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+	}
+	#timeline ul li.tml_item .comment
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5)));
+		border: none;
+	}
+	#columnIntroB div.loginPanel
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5)));
+	}
+	#columnIntroB div.loginPanel dt
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0) / (1 + var(--bg-opacity) * 0)));
+		border: none;
+	}
+	#columnIntroB div.loginPanel dt input
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5)));
+	}
+	textarea.quick:focus,
+	textarea.reply:focus,
+	textarea.reply
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5))) !important;
+	}
+	#navNeue2 #navMenuNeue li a.chl
+	{
+		background: rgba(255, 255, 255, calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5)));
+	}
+	ul.sideTpcList .row:nth-child(odd),ul.sideTpcList .row:nth-child(2n),ul.timeline li
+	{
+		border:none;
+	}
+}
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm|mono|magi).+"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(|real|anime|book|game|music|index|award)/.+"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group|pm|mono|character|person|index)")
+{
+	/*其他页面样式优化*/
+	#timeline h4.Header,
+	ul.timeline li,
+	ul.tagList li,
+	#headerNeue2,
+	.line_odd,
+	.line_even,
+	.user_list.line_list li,
+	#columnSearch,
+	a.cover:hover img.cover,
+	img.cover,
+	table.settings td,
+	#columnSearchA ul li a,
+	#columnSearchA ul li a:hover,
+	#columnSearchA ul li a.selected,
+	#wrapperNeue #columnSubjectBrowserA #browserTools,
+	ul.browserFull li.item.even,
+	div.light_odd,
+	div.light_even,
+	.borderNeue,
+	#headerSubject div.subjectNav,
+	div.navSubTabsWrapper,
+	div.section_line,
+	ul.browserList li.even,
+	div#footer ul#footerLinks,
+	ul.browserList li.item,
+	ul#infobox li,
+	ul.groupsLine li,
+	div.subject_tag_section,
+	table td.even,
+	ul.browserCoverMedium li.sep,
+	div.subjectFilter,
+	div.subjectFilter ul.grouped,
+	#browserTools,
+	ul.browserFull li.even,
+	ul.browserFull li.item,
+	.cell.name.medium.ll,
+	div.cell.ll,
+	.line_list.user_list,
+	input.inputtext,
+	div.subject_section,
+	table.topic_list tr.header,
+	ul.collect li.item,
+	ul.collect li.cat,
+	div.sub_reply_bg,
+	#entry_list div.item,
+	#columnSearchA ul,
+	div.SimpleSidePanel h2,
+	div.user_box,
+	ul#crtRelateSubjects li.old,
+	ul.ajaxSubjectList li,
+	#columnCrtBrowserB .crtTools
+	{
+		border: none;
+		background: rgba(0, 0, 0, 0);
+	}
+	#headerSubject h1
+	{
+		margin-top: 0;
+		padding-top: 10px;
+	}
+	#eden_tpc_list ul li.line_odd,
+	#eden_tpc_list ul li.line_even
+	{
+		border: none;
+	}
+	.panelProgress.book
+	{
+		border-radius: 7px 7px 7px 7px;
+		border-color: rgba(153, 153, 153, .59);
+	}
+	#eden_tpc_list ul li.line_odd:hover,
+	#eden_tpc_list ul li.line_odd,
+	#eden_tpc_list ul li.line_even:hover,
+	#eden_tpc_list ul li.line_even
+	{
+		transition: 0.8s;
+	}
+	a.chl:hover,
+	a.chl
+	{
+		transition: 0.5s;
+	}
+	img.cover,
+	img.cover:hover
+	{
+		padding: 0px;
+		border: 0px;
+	}
+	#headerNeue2,
+	div.codeHighlight
+	{
+		backdrop-filter: blur(3px);
+	}
+
+	a.tip_i,
+	a.tip_i:link,
+	a.tip_i:visited,
+	a.tip_i:active,
+	a.reply-plus-one
+	{
+		color: #686868;
+	}
+	a.reply-plus-one
+	{
+		border: 1px solid #686868;
+	}
+	div.re_info,
+	div.re_info a,
+	.tip_j
+	{
+		color: #686868;
+	}
+	div.SimpleSidePanel
+	{
+		border-radius: 8px 8px 8px 8px;
+	}
+	#searchHomeBox ul.cat li a,
+	.indexCatBox ul.cat li a
+	{
+		color: #7d7d7d!important;
+		border-radius: 7px;
+		box-shadow: none;
+	}
+	img.cover
+	{
+		border-radius: 6px;
+		/*margin-left: 10px;*/
+	}
+	#headerProfile div.subjectNav
+	{
+		border: none;
+		margin-bottom: 0px;
+	}
+
+	#headerProfile,
+	.mainWrapper,
+	#headerSubject,
+	#main.png_bg,
+	#columnSearch,
+	div#main
+	{
+		width: 90%;
+		margin: auto;
+	}
+
+	.tab_button
+	{
+		color: #000;
+	}
+	span.count
+	{
+		filter: saturate(0);
+	}
+	span.description,
+	small.alarm
+	{
+		color: #000000f5;
+	}
+	q
+	{
+		color: #909090;
+	}
+	span.tip_i
+	{
+		color: rgb(83, 79, 104);
+	}
+
+	#headerNeue2
+	{
+		z-index: 9;
+		box-shadow: none;
+	}
+	ul
+	{
+		z-index: 99;
+	}
+	span.userInfo
+	{
+		z-index: 99;
+	}
+	table.forumtable
+	{
+		border: 2px;
+		border-color: white;
+	}
+	.columns.clearit
+	{
+		margin: auto;
+	}
+	div[style="width:800px; margin:0 auto; overflow:hidden"]/*乐园*/
+	{
+		transform: translate(0, 10%);
+	}
+	.columnsApp.clearit
+	{
+		margin-top: 5px;
+		margin-bottom: 100px;
+	}
+	div.SidePanel h2,
+	div.SidePanelLow h2
+	{
+		text-shadow: none;
+	}
+	#sliderContainer
+	{
+		opacity: 0;
+		position: fixed;
+		z-index: -1000;
+	}
+	#eden_tpc_list
+	{
+		margin-top: -1px;
+	}
+	.indexCatBox ul.cat li a.add
+	{
+		color: grey;
+	}
+	.indexCatBox ul.cat li a.add:hover
+	{
+		color: #F09199;
+	}
+	div.row_reply
+	{
+		margin-bottom: 7px;
+		border-radius: 10px;
+	}
+	#comment_list
+	{
+		box-shadow: none;
+	}
+	input.inputBtn,
+	a.fancyBtn
+	{
+		border-radius: 5px;
+		border: none;
+	}
+	table.topic_list
+	{
+		font-size: 13px!important;
+	}
+	div.grp_box
+	{
+		border: 1px solid #F0F0F0;
+	}
+	table.topic_list td.subject,
+	table.topic_list th.subject
+	{
+		padding: 10px;
+	}
+	.shareBtn
+	{
+		opacity: 0;
+		position: fixed;
+		z-index: -1000;
+	}
+	div.eden_rec_box
+	{
+		border-radius: 20px;
+	}
+	a.selected
+	{
+		border: 1px solid #c4c4c4bd!important;
+	}
+	a.chiiBtn
+	{
+		box-shadow: none;
+	}
+	div.collectBlock p.collectModify
+	{
+		box-shadow: none;
+	}
+	#comment_list div.row_reply:first-child
+	{
+		border-radius: 10px;
+		border: 1px solid #F0F0F0;
+	}
+	#comment_list div.row_reply:last-child
+	{
+		border-radius: 10px;
+		border: 1px solid #F0F0F0;
+	}
+	blockquote.intro
+	{
+		border-radius: 15px;
+		border: 1px solid #F0F0F0;
+	}
+	table.forumtable th
+	{
+		padding: 8px;
+	}
+	div.subject_tag_section a.l
+	{
+		margin: 2px;
+		transition: .5s;
+	}
+	div.subject_tag_section a.l:hover small
+	{
+		color: #484848;
+	}
+	div.subject_tag_section div.inner
+	{
+		padding-right: 5px;
+	}
+	li.doujin
+	{
+		z-index: -1;
+		position: fixed;
+		opacity: 0;
+	}
+	ul.navTabs
+	{
+		background: rgba(255, 255, 255, 0)!important;
+		border: none;
+	}
+	.subjectNav .navTabs
+	{
+		width: 100%;
+	}
+	.infobox_container .infobox_expand
+	{
+		border: none;
+		border-radius: 4px;
+	}
+	.infobox_container .infobox_expand a
+	{
+		border-radius: 4px;
+	}
+	#comment_list div.row_state
+	{
+		border-radius: 4px!important;
+	}
+	div.reply_highlight
+	{
+		border-color: #88c5ff82!important;
+	}
+	#wrapperNeue
+	{
+		min-width: 100%!important;
+	}
+	ul.secTab li a.selected,
+	ul.secTab li a.focus,
+	ul.secTab li a:hover
+	{
+		color: black;
+	}
+	#columnCrtBrowserA
+	{
+		border-radius: 10px;
+	}
+	#timeline ul li span.info,
+	#columnTimelineInnerWrapper ul.timelineTabs,
+	#columnTimelineInnerWrapper,
+	#columnTimelineInnerB
+	{
+		border: none;
+	}
+	#timeline ul li.tml_item .comment
+	{
+		border: none;
+	}
+	#columnIntroB div.loginPanel dt
+	{
+		border: none;
+	}
+	.mosaic-tile
+	{
+		padding: 5px;
+		border-radius: 10px;
+	}
+	a.chiiBtn
+	{
+		border-radius: 4px;
+		padding: 5px 10px 5px 10px;
+		text-shadow: none;
+		box-shadow: none;
+		border: none;
+	}
+	ul.secTab li a,
+	ul.secTab li:first-child a
+	{
+		padding: 5px 10px 5px 10px;
+		text-shadow: none;
+		box-shadow: none;
+		border: none;
+	}
+	a.selected
+	{
+		box-shadow: none;
+		padding: 4px 9px 4.5px 9px!important
+	}
+	ul.secTab li a:hover
+	{
+		box-shadow: none;
+	}
+	div.menu_inner
+	{
+		box-shadow: none;
+	}
+	#navMenuNeue li a.focus
+	{
+		color: rgb(204, 129, 146);
+	}
+	a.btnBlue,
+	a.btnBlueSmall
+	{
+		color: black;
+		padding: 10px 20px 10px 20px;
+		border-radius: 5px;
+	}
+	#rakuen_infobox
+	{
+		width: 200px;
+	}
+	#headerProfile h1 span
+	{
+		color: black;
+	}
+	a.chiiBtn:hover
+	{
+		box-shadow: none;
+	}
+	#show-diff-view-side-by-side
+	{
+		width: 90%;
+	}
+	ul#infobox li.sub
+	{
+		border: none;
+	}
+	ul#infobox li.sub_section
+	{
+		border: none;
+	}
+	#headerSubject span.collect a
+	{
+		line-height: 20px;
+	}
+	ul#infobox li .tag
+	{
+		border: 1px solid #0084B4;
+	}
+	ul#infobox li.sub_group
+	{
+		border: none;
+	}
+	a.cover:hover img.cover
+	{
+		padding: 0;
+	}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm|mono|magi).+"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(real|anime|book|game|music|index)/.+"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group|pm|mono|character|person|index)")
+{
+	/*透明化*/
+	body
+	{
+		background: rgba(255, 255, 255, 1);
+	}
+	div#main
+	{
+		background: rgba(255, 255, 255, 0.4);
+	}
+	/*div.SimpleSidePanel
+{
+	background: rgba(255, 255, 255, 0.4);
+}*/
+	.indexCatBox ul.cat li a.add,
+	.indexCatBox ul.cat li a.add:hover
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	#user_home div.userSynchronize
+	{
+		background: rgba(255, 255, 255, 0.6);
+	}
+	ul.sideEpList li.even
+	{
+		background: rgba(255, 255, 255, 0.4);
+	}
+	ul.sideEpList li.cur
+	{
+		background: rgba(98, 114, 178, .77)!important;
+	}
+	#columnTimelineA #SayInput
+	{
+		background: rgba(255, 255, 255, 0.6);
+	}
+	ul#crtRelateSubjects li.old
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	div.SidePanel,
+	div.SidePanelLow
+	{
+		background: rgba(255, 255, 255, .4);
+		backdrop-filter: blur(5px);
+	}
+	#eden_tpc_list ul li.line_odd:hover,
+	#eden_tpc_list ul li.line_even:hover
+	{
+		background: rgba(255, 255, 255, .7);
+	}
+	div.subject_tag_section a.l
+	{
+		background: rgba(255, 255, 255, .7);
+	}
+	table.forumtable
+	{
+		background: rgba(255, 255, 255, 0.4);
+	}
+	table.forumtable tr.alt td
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	.subjectListWrapper
+	{
+		background: rgba(255, 255, 255, 0.5);
+	}
+	#columnSearchA ul,
+	#columnSearchA ul li.root
+	{
+		background: rgba(255, 255, 255, 0.4);
+	}
+	#columnSearch
+	{
+		background: rgba(255, 255, 255, 0.4);
+	}
+	.magiHeader
+	{
+		background: rgba(255, 255, 255, 0.35);
+	}
+	.panelProgress.book
+	{
+		background: rgba(255, 255, 255, 0.35);
+	}
+	div#ChartWarpper
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	#columnSearchA ul li a:hover,
+	#columnSearchA ul li a.selected
+	{
+		background: #f09199ad;
+	}
+	.columnsApp.clearit
+	{
+		background: rgba(255, 255, 255, 0.5);
+	}
+	div.eden_rec_box
+	{
+		background: rgba(255, 255, 255, 0.5);
+	}
+	ul#browserItemList
+	{
+		background: rgba(255, 255, 255, .0);
+	}
+	div.infobox .modifyTool
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	#columnNotifyA div.even
+	{
+		background: rgba(255, 255, 255, .4);
+	}
+	#main.png_bg
+	{
+		background: rgba(255, 255, 255, .35);
+	}
+	ul.timelineTabs li a.focus,
+	ul.timelineTabs li a.top_focus
+	{
+		background: rgba(255, 255, 255, .7);
+	}
+	.grp_box.clearit
+	{
+		background: rgba(255, 255, 255, .35);
+	}
+	#columnB
+	{
+		background: rgba(255, 255, 255, .0);
+	}
+	#pageHeader
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	ul.browserFull li.item.even
+	{
+		background: rgba(255, 255, 255, .0);
+	}
+	#columnSubjectBrowserB .sideInner
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	#columnSubjectBrowserB .sideInner h2
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	select.form
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	input.btnPink,
+	input.btnGray
+	{
+		background: #ff4a5952;
+	}
+	#comment_list
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	#header
+	{
+		background: rgba(255, 255, 255, .35);
+	}
+	.mainWrapper
+	{
+		background: rgba(255, 255, 255, 0.3);
+	}
+	.mainWrapper,
+	#comment_box .text,
+	#comment_box .text_pm,
+	.line_odd,
+	.line_even,
+	ul.line_list_music li.cat,
+	ul.line_list li.cat
+	{
+		background: rgba(255, 255, 255, .4);
+	}
+
+	#grailBox2
+	{
+		background: rgba(255, 255, 255, .65);
+	}
+	ul.timelineTabs
+	{
+		background: rgba(255, 255, 255, .65);
+	}
+	#footer
+	{
+		background: rgba(255, 255, 255, .4);
+	}
+	.temples.tab_page_item.tab_page_item_0
+	{
+		background: rgba(255, 255, 255, .65);
+	}
+	#headerSubject
+	{
+		width: 90%;
+		background: rgba(255, 255, 255, .6);
+	}
+	subject_section.clearit
+	{
+		background: rgba(255, 255, 255, .67);
+	}
+	tbody
+	{
+		background: rgba(255, 255, 255, .0);
+	}
+	hr.board,
+	div#collect_title,
+	#ChartWarpper .chart_desc
+	{
+		background: rgba(255, 255, 255, .0);
+	}
+	a.btnGreenSmall.rr
+	{
+		background: rgba(30, 181, 176, .47);
+	}
+	a.btnRedSmall.rr
+	{
+		background: rgba(200, 106, 106, .49);
+	}
+	#subject_inner_info,
+	div.menu_inner
+	{
+		background: rgba(255, 255, 255, .49);
+	}
+	#headerNeue2
+	{
+		background: rgba(255, 255, 255, .7);
+	}
+	div.grp_box
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	table.topic_list tr.header
+	{
+		background: rgba(255, 255, 255, .2);
+	}
+	#headerProfile div.subjectNav
+	{
+		background: rgba(255, 255, 255, .35);
+	}
+	#headerProfile .headerContainer
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	blockquote.intro
+	{
+		background: rgba(255, 255, 255, .4);
+	}
+	div.row_reply
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	a.chiiBtn
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	a.chiiBtn:hover
+	{
+		background: rgba(245, 107, 155, .4);
+	}
+	table.topic_list
+	{
+		/* 	background: rgba(255, 255, 255, .3); */
+		border-radius: 15px;
+	}
+	div.collectBlock p.collectModify
+	{
+		background: #ffffffba url(/img/ico/ico_list_love.gif) no-repeat 5px 50%;
+	}
+	table.topic_list tr.even
+	{
+		background-color: #fff0;
+	}
+	tr.odd
+	{
+		background-color: #f9f9f900;
+	}
+	div.subject_section
+	{
+		background-color: #f9f9f900;
+		border-radius: 10px;
+		margin-bottom: 30px;
+	}
+	ul.browserFull li.item span.rank,
+	a.selected
+	{
+		background: #ff99bf4f!important;
+	}
+	textarea#content
+	{
+		background: rgba(255, 255, 255, .5)!important;
+	}
+	.modifyTool
+	{
+		opacity: 0.9;
+	}
+	div#footer ul#footerLinks
+	{
+		opacity: 0.9;
+	}
+	#cluetip
+	{
+		opacity: 0.85;
+	}
+	#timeline ul li.tml_item .card
+	{
+		background: rgba(255, 255, 255, .6);
+	}
+	#timeline ul li.tml_item .card.card_tiny .container
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	ul.sideTpcList .row:nth-child(odd)
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	#comment_list .row:nth-child(odd)
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	#comment_list .row:nth-child(even)
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	.codeHighlight pre
+	{
+		background-color: rgba(255, 255, 255, .5)!important;
+	}
+	.infobox_container .infobox_expand
+	{
+		background: rgba(255, 255, 255, .4);
+	}
+	.infobox_container .infobox_expand a:hover
+	{
+		background: rgba(245, 107, 155, .4);
+	}
+	#comment_list div.row_state
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	div.reply_highlight
+	{
+		background: rgba(255, 255, 255, .4)!important;
+	}
+	#aboutTimeline ul.Events li.detail ul.column li
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	#aboutTimeline ul.Events li.intro p
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	#aboutTimeline
+	{
+		background: rgba(255, 255, 255, .4);
+	}
+	input.inputtext,
+	textarea.reply
+	{
+		background: rgba(255, 255, 255, .5)!important;
+	}
+	input.inputBtn,
+	a.fancyBtn
+	{
+		background: #ff7a947a;
+	}
+	#columnCrtBrowserA
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	#columnCrtBrowserA h3
+	{
+		background: none;
+	}
+	#columnTimelineInnerB div.TsukkmiBox,
+	#columnTimelineInnerWrapper
+	{
+		background: none;
+	}
+	#columnTimelineInnerWrapper ul.timelineTabs,
+	#columnTimelineInnerB
+	{
+		background: rgba(255, 255, 255, .3);
+	}
+	#timeline ul li.tml_item .comment
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	#columnIntroB div.loginPanel
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	#columnIntroB div.loginPanel dt
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	#timeline ul li.tml_item .card:not(.card_tiny)
+	{
+		background: rgba(255, 255, 255, .4);
+	}
+	#timeline ul li.tml_item .card.card_tiny
+	{
+		background: rgba(255, 255, 255, .0);
+	}
+	#timeline ul li.tml_item .card.card_tiny .container
+	{
+		background: rgba(255, 255, 255, .4);
+	}
+	#timeline ul li.tml_item .card.card_tiny .container:hover
+	{
+		background: rgba(255, 255, 255, .6);
+	}
+	ul.sideTpcList .row:nth-child(odd),
+	ul.sideTpcList .row:nth-child(2n)
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	/*.mosaic-tile
+{
+	background:rgba(255, 255, 255, .4);
+}*/
+	rect[data-count="0"]
+	{
+		fill: rgb(255, 255, 255);
+	}
+	ul.secTab li a
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	ul.secTab li a:hover
+	{
+		background: rgba(255, 164, 189, .54);
+	}
+	#navNeue2 #navMenuNeue li a.chl
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+	a.btnBlue,
+	a.btnBlueSmall
+	{
+		background: rgba(255, 255, 255, .7);
+	}
+	a.btnBlue:hover,
+	a.btnBlueSmall:hover
+	{
+		background: rgba(255, 114, 114, .41);
+	}
+	input.inputBtn:hover,
+	a.fancyBtn:hover
+	{
+		background: rgba(255, 98, 130, .61);
+	}
+	.likes_grid .item
+	{
+		background: rgba(255, 255, 255, .6);
+	}
+	textarea.quick
+	{
+		background: rgba(255, 255, 255, .6);
+	}
+	textarea.quick:focus,
+	textarea.reply:focus
+	{
+		background: rgba(255, 255, 255, .8);
+	}
+	#show-diff-view-side-by-side
+	{
+		background: rgba(255, 255, 255, .6);
+	}
+	.d2h-file-header,
+	.d2h-code-side-linenumber
+	{
+		background: rgba(255, 255, 255, .6);
+	}
+	ul#infobox li.group_section
+	{
+		background: rgba(255, 255, 255, .4);
+	}
+	table.settings .tag_list li a
+	{
+		background: rgba(255, 255, 255, .8);
+	}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(group)/.+/members")
+{
+	/*小组成员页面细节优化*/
+	.columns.clearit
+	{
+		background: rgba(255, 255, 255, .3);
+	}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/.+")
+{
+	/*条目、角色、人物页鼠标移动到封面上会放大*/
+	img.cover:hover
+	{
+		height: 95%;
+		width: 95%;
+		box-shadow: 0px 0px 12px black;
+		-webkit-box-shadow: 0px 0px 12px black;
+		transition: all .5s;
+	}
+	img.cover
+	{
+		margin: auto;
+		height: 68%;
+		width: 68%;
+		box-shadow: none;
+		transition: all .5s;
+	}
+	tbody
+	{
+		/*     display: block; */
+		/*     padding:30px 0px 20px 50px; */
+	}
+}
+
+@-moz-document regexp("https://(bgm.tv|bangumi.tv|chii.in)/subject_search.+"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/.+/browser.+")
+{
+	/*搜索页、排行榜鼠标移动到封面上会放大*/
+	ul.browserFull li.item img.cover
+	{
+		max-width: 100px;
+	}
+	img.cover
+	{
+		box-shadow: none;
+		display: -webkit-box;
+		-webkit-box-pack: center;
+		margin: auto;
+		height: 68%;
+		width: 68%;
+		transition: all .5s;
+		/*此行可调整动画速度*/
+	}
+	.columns.clearit
+	{
+		display: -webkit-box;
+		-webkit-box-pack: center;
+	}
+	img.cover:hover
+	{
+		box-shadow: 0px 0px 12px black;
+		-webkit-box-shadow: 0px 0px 12px black;
+		height: 100%;
+		width: 100%;
+		transition: all .5s;
+	}
+	#columnSearchA
+	{
+		margin-right: 0;
+	}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(person|character).+")
+{
+	/*封面放大的bug排除*/
+	img.cover[src^="//lain.bgm.tv/pic/crt"]
+	{
+		box-shadow: none;
+		transition: all .5s;
+	}
+	img.cover[src^="//lain.bgm.tv/pic/crt"]:hover
+	{
+
+		box-shadow: 0px 0px 12px black;
+		-webkit-box-shadow: 0px 0px 12px black;
+		transition: all .5s;
+	}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}#;"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}/(collection|wish|doin|on_|drop).+"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(person|character).+"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/(blog|real|mono|anime|book|music|game|group|index)"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/help/bbcode"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/subject/topic.+"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/(anime|settings|notify|music|book|game|about|wiki|new_subject|index|ep).+"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/(dev|group|anime|settings|notify|music|book|game|calendar|timeline|about|wiki)"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/reply.+"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/.+/new_topic"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/topic/.+/edit"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/group/(discover|all|my_topic|my_reply)"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/blog/create"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/blog/.+/edit"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}/(characters|ep|persons|comments.+|reviews|board|stats)"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}/topic/new"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}/edit#"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}/persons.+"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/character")
+{
+	/*标题居中*/
+	#header
+	{
+		padding: 20px;
+	}
+	h1
+	{
+		display: block!important;
+		text-align: center;
+	}
+	#headerSubject,
+	div.mainWrapper
+	{
+		margin-left: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#headerSubject div.subjectNav
+	{
+		width: 100%;
+		height: 40px;
+		text-align: center;
+	}
+	#headerSubject
+	{
+		padding-bottom: 0px;
+	}
+	.subjectNav .navTabs
+	{
+
+		display: inline-block;
+		width: auto!important;
+		text-align: center;
+	}
+	.subjectNav .navTabs
+	{
+		height: 20px;
+		line-height: 20px;
+		margin-top: 10px;
+	}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/blog/[0-9]{1,}"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/group/topic/[0-9]{1,}"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/group/topic/[0-9]{1,}#.+")
+{
+	/*标题强制回归*/
+	#headerSubject div.subjectNav
+	{
+		width: 100%;
+		height: 40px;
+		text-align: left!important;
+	}
+	h1
+	{
+		display: block!important;
+		text-align: left!important;
+	}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9].+/(edit_detail|edit|upload_img|character|add_related/person|add_related/subject.+|new_revision)")
+{
+	/*wiki界面*/
+	#header
+	{
+		padding: 20px;
+	}
+	h1
+	{
+		display: block!important;
+		text-align: center!important;
+	}
+	#headerSubject,
+	div.mainWrapper
+	{
+		margin-left: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#headerSubject div.subjectNav
+	{
+		width: 100%;
+		height: 40px;
+		text-align: center;
+	}
+	#headerSubject
+	{
+		padding-bottom: 0px;
+	}
+	.subjectNav .navTabs
+	{
+
+		display: inline-block;
+		width: auto!important;
+		text-align: center;
+	}
+	.subjectNav .navTabs
+	{
+		height: 20px;
+		line-height: 20px;
+		margin-top: 10px;
+	}
+	input.multiKeyAdd
+	{
+		background: #a7db9c url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M19 11H13V5h-2v6H5v2h6v6h2v-6h6z'/%3E%3C/svg%3E") no-repeat center center;
+		border-radius: 50%;
+		border: 1.5px solid #85bf79;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+	}
+}
+
+@-moz-document regexp("https://(bgm.tv|bangumi.tv|chii.in)/wiki.+"),
+regexp("https://(bgm.tv|bangumi.tv|chii.in)/wiki")
+{
+	#headerSubject
+	{
+		height: 105px!important;
+	}
+	ul.wikiStats li
+	{
+		background: rgba(255, 255, 255, .5);
+		border: none;
+		box-shadow: none;
+		margin: 3.5px;
+	}
+	ul.wikiScrollBlock
+	{
+		border-radius: 10px;
+	}
+	.user_list .cell.name
+	{
+		background: none;
+	}
+	#comment_box .text,
+	#comment_box .text_pm,
+	.comment_box
+	{
+		background: rgba(255, 255, 255, .5);
+	}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/user/([0-9]|[a-z]|[_]){1,}/(blog|timeline|groups|friends|rev_friends)#?"),
+regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/user/([0-9]|[a-z]|[_]){1,}")
+{
+	/*个人主页细节*/
+	#headerSubject,
+	div.mainWrapper
+	{
+		margin-top: -2px;
+	}
+	#headerSubject,
+	div.mainWrapper
+	{
+		margin-left: auto;
+		padding-top: 15px;
+	}
+	#columnA
+	{
+		margin: 5px 0 0 0;
+	}
+	#columnTimelineInnerWrapper,
+	#columnTimelineInnerWrapper ul.timelineTabs,
+	element.style,
+	div.SidePanelMini
+	{
+		background: rgba(255, 255, 255, .3);
+	}
+	.line_odd,
+	.line_even
+	{
+		background: rgba(255, 255, 255, 0);
+		border: none;
+	}
+	#columnTimelineInnerB
+	{
+		background-color: rgba(255, 255, 255, .0);
+	}
+	#columnTimelineInnerB div.TsukkmiBox
+	{
+		background: rgba(255, 255, 255, 0);
+	}
+	ul.navTabs
+	{
+		background: rgba(255, 255, 255, .5)!important;
+		border: none;
+	}
+	.mosaic-tile
+	{
+		background: rgba(255, 255, 255, .4);
+	}
+}
+
+@-moz-document domain("bgm.tv"),
+domain("bangumi.tv"),
+domain("chii.in")
+{
+	/*图片样式优化*/
+	.pictureFrameGroup .overlay
+	{
+		background: none;
+	}
+	img
+	{
+		image-rendering: -webkit-optimize-contrast;
+		border-radius: 5px;
+		/*border-style: solid;
+	border-color: white;
+	border-width: 2px;*/
+	}
+}
+
+@-moz-document regexp("https://bgm.tv/dev/app/.+"),
+regexp("https://bangumi.tv/dev/app/.+"),
+regexp("https://chii.in/dev/app/.+")
+{
+	/*组件页面优化*/
+	.subjectNav .navTabs,
+	#header
+	{
+		width: 1000px!important;
+		margin: 0 auto;
+	}
+	#header
+	{
+		background: none;
+	}
+}
+
+@-moz-document regexp("https://bgm.tv/subject/.+/add_related/subject/book.+"),
+regexp("https://bangumi.tv/subject/.+/add_related/subject/book.+"),
+regexp("https://chii.in/subject/.+/add_related/subject/book.+")
+{
+	/*BRRS*/
+	.brrs-editor-item,
+	.brrs-editor-item:hover
+	{
+		border-radius: 15px;
+		background: rgba(255, 255, 255, 0);
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: none;
+	}
+	.brrs-previewer-item
+	{
+		background: rgba(255, 255, 255, .4);
+		border-radius: 15px;
+		margin-bottom: 80px;
+	}
+}
+
+@-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/subject/[0-9]{1,}/persons.+")
+{
+	ul.line_list li.cat
+	{
+		border: none;
+		position: relative;
+	}
+	ul.line_list li.cat::after
+	{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 98%;
+		height: 1.2px;
+		background-color: #00000036;
+		left: 1%;
+	}
+	ul.sideEpList li.odd
+	{
+		background: rgba(255, 255, 255, .4);
+		margin-top: 4px;
+		margin-bottom: 4px;
+	}
+}
