@@ -36,9 +36,28 @@ url("https://lain.bgm.tv/pic/photo/l/95/f7/615400_h6Zk6.jpg")
 linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246))
 ```
 
-2. “透明度”，取值越高，越不透明（当前试运行中，仅主页生效）
+2. “透明度”，取值越高，越不透明（当前试运行中，仅主页生效）  
 
+3.额外选项：高清封面  
+复制到油猴插件使用
+```
+// ==UserScript==
+// @name         高清封面
+// @namespace    ?
+// @version      0.1
+// @description  try to take over the world!
+// @author       rabbitohh
+// @match        *://bgm.tv/subject/*
+// @grant        none
+// @require      https://code.jquery.com/jquery-2.1.4.min.js
+// ==/UserScript==
+this.$ = this.jQuery = jQuery.noConflict(true);
+$(document).ready(function(){
+    'use strict';
 
+    $('.cover').attr('src',$(".thickbox.cover").attr("href"));
+});
+```
 ## find me  
 我的bangumi主页：https://bgm.tv/user/615400  
 bangumi讨论帖：https://bgm.tv/rakuen/topic/group/367774  
