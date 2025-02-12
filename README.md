@@ -2,7 +2,7 @@
 ![bangumi-css](https://socialify.git.ci/rabbitohh/bangumi-css/image?description=1&font=Bitter&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Frabbitohh%2Fbangumi-css%2F90500f13513b200a8814f3cd511bb402218c303b%2Fbangumi%2520by-euai%2520from-iconfont.svg&name=1&owner=1&pattern=Circuit%20Board&theme=Light)
   
 [![Downloads](https://img.shields.io/github/downloads/rabbitohh/bangumi-css/total?color=teal&style=flat-square)](https://github.com/rabbitohh/bangumi-css/releases)
-[![userstyles](https://img.shields.io/badge/Install%20with%20userstyle-66-green.svg?style=flat-square)](https://userstyles.world/style/3225/bangumi)
+[![userstyles](https://img.shields.io/badge/Install%20with%20userstyle-2557-green.svg?style=flat-square)](https://userstyles.world/style/3225/bangumi)
 ![Last commit](https://img.shields.io/github/last-commit/rabbitohh/bangumi-css?style=flat-square)
 [![Pre release](https://img.shields.io/github/release-pre/rabbitohh/bangumi-css?style=flat-square)](https://github.com/rabbitohh/bangumi-css/releases)
 ![code-size](https://img.shields.io/github/languages/code-size/rabbitohh/bangumi-css?color=coral&style=flat-square)
