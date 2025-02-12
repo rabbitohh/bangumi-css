@@ -47,7 +47,7 @@ bangumi讨论帖：https://bgm.tv/rakuen/topic/group/367774
 
 ## 预览图  
 <a href="https://smms.app/image/CJ49gEj8G6LBYaw" target="_blank"><img src="https://s2.loli.net/2024/07/21/CJ49gEj8G6LBYaw.gif" alt="mnggiflab-compressed-mnggiflab-from-video-to-gif-2024_07_21_17_16_21.gif"></a>
-<a href="https://smms.app/image/2ZvXrNynoRV4u9p" target="_blank"><img src="https://s2.loli.net/2024/07/21/2ZvXrNynoRV4u9p.gif" alt="mnggiflab-compressed-mnggiflab-from-video-to-gif-2024_07_21_17_04_06.gif"></a>
+<a><img src="preview/2ZvXrNynoRV4u9p.gif"></a>
 <a href="https://smms.app/image/w1yi6UzgZpcIQ4e" target="_blank"><img src="https://s2.loli.net/2024/07/21/w1yi6UzgZpcIQ4e.gif" alt="mnggiflab-compressed-mnggiflab-from-video-to-gif-2024_07_21_17_08_39.gif"></a>
 <a href="https://smms.app/image/McfSAn8KjI4w1Gk" target="_blank"><img src="https://s2.loli.net/2024/07/21/McfSAn8KjI4w1Gk.png" alt="Screenshot_10.png"></a>
 <a href="https://smms.app/image/QvAtEgGFe21Kjof" target="_blank"><img src="https://s2.loli.net/2024/07/21/QvAtEgGFe21Kjof.png" alt="Screenshot_9.png"></a>
