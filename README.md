@@ -46,10 +46,10 @@ linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246))
 bangumi讨论帖：https://bgm.tv/rakuen/topic/group/367774  
 
 ## 预览图  
-<a href="https://smms.app/image/CJ49gEj8G6LBYaw" target="_blank"><img src="https://s2.loli.net/2024/07/21/CJ49gEj8G6LBYaw.gif" alt="mnggiflab-compressed-mnggiflab-from-video-to-gif-2024_07_21_17_16_21.gif"></a>
+<a><img src="preview/CJ49gEj8G6LBYaw.gif"></a>
 <a><img src="preview/2ZvXrNynoRV4u9p.gif"></a>
-<a href="https://smms.app/image/w1yi6UzgZpcIQ4e" target="_blank"><img src="https://s2.loli.net/2024/07/21/w1yi6UzgZpcIQ4e.gif" alt="mnggiflab-compressed-mnggiflab-from-video-to-gif-2024_07_21_17_08_39.gif"></a>
-<a href="https://smms.app/image/McfSAn8KjI4w1Gk" target="_blank"><img src="https://s2.loli.net/2024/07/21/McfSAn8KjI4w1Gk.png" alt="Screenshot_10.png"></a>
-<a href="https://smms.app/image/QvAtEgGFe21Kjof" target="_blank"><img src="https://s2.loli.net/2024/07/21/QvAtEgGFe21Kjof.png" alt="Screenshot_9.png"></a>
-<a href="https://smms.app/image/YlhVbNLj2Su8oUK" target="_blank"><img src="https://s2.loli.net/2024/07/21/YlhVbNLj2Su8oUK.png" alt="Screenshot_12.png"></a>
-<a href="https://smms.app/image/ZQuaX45VkYP6rbt" target="_blank"><img src="https://s2.loli.net/2024/07/21/ZQuaX45VkYP6rbt.png" alt="Screenshot_13.png"></a>
+<a><img src="preview/w1yi6UzgZpcIQ4e.gif"></a>
+<a><img src="preview/McfSAn8KjI4w1Gk.png"></a>
+<a><img src="preview/QvAtEgGFe21Kjof.png"></a>
+<a><img src="preview/YlhVbNLj2Su8oUK.png"></a>
+<a><img src="preview/ZQuaX45VkYP6rbt.png"></a>
