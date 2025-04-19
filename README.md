@@ -36,7 +36,7 @@ url("https://lain.bgm.tv/pic/photo/l/95/f7/615400_h6Zk6.jpg")
 linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246))
 ```
 
-2. “透明度”，取值越高，越不透明（当前试运行中，仅主页生效）
+2. “透明度”，取值越高，越不透明 ~~（当前试运行中，仅主页生效）~~ 已上线全站  
 
 3. 额外选项：高清封面  
 使用油猴脚本：https://bgm.tv/group/topic/416403  
