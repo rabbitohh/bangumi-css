@@ -1,13 +1,14 @@
 /* ==UserStyle==
 @name         番组计划“新”主题
-@version       2.1.3
+@version       2.2.2
 @namespace      https://bgm.tv/user/615400
 @description 	  想说的都在github里 https://github.com/rabbitohh/bangumi-css
 @author      	rabbitohh
 @license    	 MIT
 @var text bg-custom "自定义背景" linear-gradient(to right, rgb(250, 187, 187), rgb(238, 130, 146))
-@var text bg-opacity "透明度 取值[0,+∞]" 1
+@var text bg-opacity "透明度 取值[0,+∞)" 1
 ==/UserStyle== */
+
 @-moz-document domain("bgm.tv"), domain("bangumi.tv"), domain("chii.in")
 {
 	/*光标直接打开黑条 by@yonjar*/
@@ -39,7 +40,7 @@
 	/*光标会让格子弹起，标签横展*/
 	ul.prg_list li:hover
 	{
-		margin-bottom: 5px;
+		margin-bottom: 8px!important;
 		display: block;
 		transition: .5s;
 		margin-top: -5px;
@@ -47,39 +48,41 @@
 	}
 	ul.prg_list li
 	{
-		margin-bottom: 0px;
+		margin-bottom: 3px!important;
 		display: block;
 		transition: .5s;
 		margin-top: 0px;
 	}
-	.tinyMode a.epBtnWatched:hover, .tinyMode a.epBtnWatched:active, a.sepBtnWatched:hover
+	
+	.tinyMode a.epBtnWatched:hover, a.sepBtnWatched:hover
 	{
 		border: 1px solid #00A8FF!important;
 		padding-top: 2px!important;
 		background-color: #407fd3;
 		transition: .5s;
 	}
-	.tinyMode a.epBtnUnknown:hover, .tinyMode a.epBtnAir:hover, .tinyMode a.epBtnAir:active, a.sepBtnUnknown:hover, a.sepBtnAir:hover
+	.tinyMode a.epBtnUnknown:hover, .tinyMode a.epBtnAir:hover, a.sepBtnUnknown:hover, a.sepBtnAir:hover
 	{
 		border: 1px solid #00A8FF!important;
 		padding-top: 2px!important;
 		background-color: #cddaed;
 		transition: .5s;
 	}
-	a.epBtnWatched:hover
+	.tinyMode a.epBtnToday:hover
 	{
-		border: 1px solid #00A8FF!important;
-		padding-top: 3px!important;
-		background-color: #407fd3;
+		padding-top: 2px!important;
+		background-color: #a8e398;
+		border:#28674e 1px solid;
 		transition: .5s;
 	}
-	a.epBtnUnknown:hover, a.epBtnAir:hover
+	.tinyMode a.epBtnNA:hover
 	{
-		border: 1px solid #00A8FF!important;
-		padding-top: 3px!important;
-		background-color: #cddaed;
+		padding-top: 2px!important;
+		background-color: #cac9c9;
+		border:#28674e 1px solid;
 		transition: .5s;
 	}
+	
 	div.subject_tag_section a.l:hover
 	{
 		margin-left: 5px;
@@ -87,6 +90,45 @@
 		background: rgba(255, 255, 255, .7)!important;
 		color: #003d54;
 		transition: .5s;
+	}
+	
+	.load-epinfo.epBtnToday
+	{
+		background: #b0eba0;
+		border:#28674e 1px solid;
+		
+	}
+	a.epBtnWatched:hover
+	{
+		border: 1px solid #00A8FF!important;
+		padding-top: 5px!important;
+		background-color: #407fd3;
+		transition: .5s;
+	}
+	a.epBtnUnknown:hover, a.epBtnAir:hover
+	{
+		border: 1px solid #00A8FF!important;
+		padding-top: 5px!important;
+		background-color: #cddaed;
+		transition: .5s;
+	}
+	a.epBtnToday:hover
+	{
+		padding-top: 5px!important;
+		background-color: #a8e398;
+		border:#28674e 1px solid;
+		transition: .5s;
+	}
+	a.epBtnNA:hover
+	{
+		padding-top: 5px!important;
+		background-color: #cac9c9;
+		border:#28674e 1px solid;
+		transition: .5s;
+	}
+	.epv_popu_default
+	{
+		width:90%;
 	}
 }
 @-moz-document domain("bgm.tv"), domain("bangumi.tv"), domain("chii.in")
@@ -364,9 +406,26 @@
 	{
 		background: rgba(255, 255, 255, var(--5));
 	}
-	ul.sideTpcList .row:nth-child(odd), ul.sideTpcList .row:nth-child(2n), ul.timeline li
+	#anime-schedule-container
+	{
+		background: rgba(255, 255, 255, var(--5));
+		color:#343434;
+	}
+	ul.sideTpcList .row:nth-child(odd), ul.sideTpcList .row:nth-child(2n), ul.timeline li,#prgManager
 	{
 		border: none;
+	}
+	#prgManager,#home_calendar,.sort,#anime-schedule-container
+	{
+		backdrop-filter: blur(5px);
+	}
+	#prgManagerMain div.cloumnSubjects
+	{
+		border-right:#bfbfbf94 2px solid;
+	}
+	#timeline ul li span.info
+	{
+		border:none;
 	}
 }
 @-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm|mono|magi).+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(|real|anime|book|game|music|index|award)/.+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group|pm|mono|character|person|index)")
@@ -500,11 +559,24 @@
 	{
 		text-shadow: none;
 	}
+	#slider
+	{
+		width:95%;
+		margin-right:2.5%;
+	}
 	#sliderContainer
 	{
-		opacity: 0;
-		position: fixed;
-		z-index: -1000;
+		border:none;
+	}
+	div.ui-widget-content
+	{
+		border:1px solid #b4b4b4;
+	}
+	.ui-state-default, .ui-widget-content .ui-state-default
+	{
+		border-radius: 40%;
+		background: white;
+		border:1px solid #666;
 	}
 	#eden_tpc_list
 	{
@@ -740,87 +812,102 @@
 }
 @-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(subject|person|character|group|rakuen|blog|ep|user|new_subject|wiki|settings|dev|help|about|notify|pm|mono|magi).+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(real|anime|book|game|music|index)/.+"), regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(new_subject|wiki|settings|dev|calendar|magi|goodies|timeline|book|music|game|anime|real|about|notify|group|pm|mono|character|person|index)")
 {
-	/*透明化*/
-	body
+	:root
 	{
-		background: rgba(255, 255, 255, 1);
-	}
+		--0: 0;
+		--1: calc((var(--bg-opacity) * 0.1) / (1 + var(--bg-opacity) * 0.1 - 0.1));
+		--2: calc((var(--bg-opacity) * 0.2) / (1 + var(--bg-opacity) * 0.2 - 0.2));
+		--3: calc((var(--bg-opacity) * 0.3) / (1 + var(--bg-opacity) * 0.3 - 0.3));
+		--4: calc((var(--bg-opacity) * 0.4) / (1 + var(--bg-opacity) * 0.4 - 0.4));
+		--5: calc((var(--bg-opacity) * 0.5) / (1 + var(--bg-opacity) * 0.5 - 0.5));
+		--6: calc((var(--bg-opacity) * 0.6) / (1 + var(--bg-opacity) * 0.6 - 0.6));
+		--7: calc((var(--bg-opacity) * 0.7) / (1 + var(--bg-opacity) * 0.7 - 0.7));
+		--8: calc((var(--bg-opacity) * 0.8) / (1 + var(--bg-opacity) * 0.8 - 0.8));
+		--9: calc((var(--bg-opacity) * 0.9) / (1 + var(--bg-opacity) * 0.9 - 0.9));
+		--10: calc((var(--bg-opacity) * 1.0) / (1 + var(--bg-opacity) * 1.0 - 1.0));
+		--35: calc((var(--bg-opacity) * 0.35) / (1 + var(--bg-opacity) * 0.35 - 0.35));
+		--45: calc((var(--bg-opacity) * 0.45) / (1 + var(--bg-opacity) * 0.45 - 0.45));
+		--65: calc((var(--bg-opacity) * 0.65) / (1 + var(--bg-opacity) * 0.65 - 0.65));
+		--77: calc((var(--bg-opacity) * 0.77) / (1 + var(--bg-opacity) * 0.77 - 0.77));
+		--85: calc((var(--bg-opacity) * 0.85) / (1 + var(--bg-opacity) * 0.85 - 0.85));
+    }
+	/*透明化*/
 	div#main
 	{
-		background: rgba(255, 255, 255, 0.4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	/*div.SimpleSidePanel
 {
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 255, var(--4));
 }*/
 	.indexCatBox ul.cat li a.add, .indexCatBox ul.cat li a.add:hover
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	#user_home div.userSynchronize
 	{
-		background: rgba(255, 255, 255, 0.6);
+		background: rgba(255, 255, 255, var(--6));
 	}
 	ul.sideEpList li.even
 	{
-		background: rgba(255, 255, 255, 0.4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	ul.sideEpList li.cur
 	{
-		background: rgba(98, 114, 178, .77)!important;
+		background: rgba(98, 114, var178, var(--77))!important;
 	}
 	#columnTimelineA #SayInput
 	{
-		background: rgba(255, 255, 255, 0.6);
+		background: rgba(255, 255, 255, var(--6));
 	}
 	ul#crtRelateSubjects li.old
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	div.SidePanel, div.SidePanelLow
 	{
-		background: rgba(255, 255, 255, .4);
+		background: rgba(255, 255, 255, var(--4));
 		backdrop-filter: blur(5px);
 	}
 	#eden_tpc_list ul li.line_odd:hover, #eden_tpc_list ul li.line_even:hover
 	{
-		background: rgba(255, 255, 255, .7);
+		background: rgba(255, 255, 255, var(--7));
 	}
 	div.subject_tag_section a.l
 	{
-		background: rgba(255, 255, 255, .7);
+		background: rgba(255, 255, 255, var(--7));
 	}
 	table.forumtable
 	{
-		background: rgba(255, 255, 255, 0.4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	table.forumtable tr.alt td
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	.subjectListWrapper
 	{
-		background: rgba(255, 255, 255, 0.5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	#columnSearchA ul, #columnSearchA ul li.root
 	{
-		background: rgba(255, 255, 255, 0.4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	#columnSearch
 	{
-		background: rgba(255, 255, 255, 0.4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	.magiHeader
 	{
-		background: rgba(255, 255, 255, 0.35);
+		background: rgba(255, 255, 255, var(--35));
 	}
 	.panelProgress.book
 	{
-		background: rgba(255, 255, 255, 0.35);
+		background: rgba(255, 255, 255, var(--35));
 	}
 	div#ChartWarpper
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	#columnSearchA ul li a:hover, #columnSearchA ul li a.selected
 	{
@@ -828,59 +915,59 @@
 	}
 	.columnsApp.clearit
 	{
-		background: rgba(255, 255, 255, 0.5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	div.eden_rec_box
 	{
-		background: rgba(255, 255, 255, 0.5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	ul#browserItemList
 	{
-		background: rgba(255, 255, 255, .0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	div.infobox .modifyTool
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	#columnNotifyA div.even
 	{
-		background: rgba(255, 255, 255, .4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	#main.png_bg
 	{
-		background: rgba(255, 255, 255, .35);
+		background: rgba(255, 255, 255, var(--35));
 	}
 	ul.timelineTabs li a.focus, ul.timelineTabs li a.top_focus
 	{
-		background: rgba(255, 255, 255, .7);
+		background: rgba(255, 255, 255, var(--7));
 	}
 	.grp_box.clearit
 	{
-		background: rgba(255, 255, 255, .35);
+		background: rgba(255, 255, 255, var(--35));
 	}
 	#columnB
 	{
-		background: rgba(255, 255, 255, .0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	#pageHeader
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	ul.browserFull li.item.even
 	{
-		background: rgba(255, 255, 255, .0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	#columnSubjectBrowserB .sideInner
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	#columnSubjectBrowserB .sideInner h2
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	select.form
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	input.btnPink, input.btnGray
 	{
@@ -888,104 +975,104 @@
 	}
 	#comment_list
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	#header
 	{
-		background: rgba(255, 255, 255, .35);
+		background: rgba(255, 255, 255, var(--35));
 	}
 	.mainWrapper
 	{
-		background: rgba(255, 255, 255, 0.3);
+		background: rgba(255, 255, 255, var(--3));
 	}
 	.mainWrapper, #comment_box .text, #comment_box .text_pm, .line_odd, .line_even, ul.line_list_music li.cat, ul.line_list li.cat
 	{
-		background: rgba(255, 255, 255, .4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	#grailBox2
 	{
-		background: rgba(255, 255, 255, .65);
+		background: rgba(255, 255, 255, var(--65));
 	}
 	ul.timelineTabs
 	{
-		background: rgba(255, 255, 255, .65);
+		background: rgba(255, 255, 255, var(--65));
 	}
 	#footer
 	{
-		background: rgba(255, 255, 255, .4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	.temples.tab_page_item.tab_page_item_0
 	{
-		background: rgba(255, 255, 255, .65);
+		background: rgba(255, 255, 255, var(--65));
 	}
 	#headerSubject
 	{
 		width: 90%;
-		background: rgba(255, 255, 255, .6);
+		background: rgba(255, 255, 255, var(--6));
 	}
 	subject_section.clearit
 	{
-		background: rgba(255, 255, 255, .67);
+		background: rgba(255, 255, 255, var(--65));
 	}
 	tbody
 	{
-		background: rgba(255, 255, 255, .0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	hr.board, div#collect_title, #ChartWarpper .chart_desc
 	{
-		background: rgba(255, 255, 255, .0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	a.btnGreenSmall.rr
 	{
-		background: rgba(30, 181, 176, .47);
+		background: rgba(30, 181, 176, var(--45));
 	}
 	a.btnRedSmall.rr
 	{
-		background: rgba(200, 106, 106, .49);
+		background: rgba(200, 106, 106, var(--45));
 	}
 	#subject_inner_info, div.menu_inner
 	{
-		background: rgba(255, 255, 255, .49);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	#headerNeue2
 	{
-		background: rgba(255, 255, 255, .7);
+		background: rgba(255, 255, 255, var(--7));
 	}
 	div.grp_box
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	table.topic_list tr.header
 	{
-		background: rgba(255, 255, 255, .2);
+		background: rgba(255, 255, 255, var(--2));
 	}
 	#headerProfile div.subjectNav
 	{
-		background: rgba(255, 255, 255, .35);
+		background: rgba(255, 255, 255, var(--35));
 	}
 	#headerProfile .headerContainer
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	blockquote.intro
 	{
-		background: rgba(255, 255, 255, .4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	div.row_reply
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	a.chiiBtn
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	a.chiiBtn:hover
 	{
-		background: rgba(245, 107, 155, .4);
+		background: rgba(245, 107, 155, var(--4));
 	}
 	table.topic_list
 	{
-		/* 	background: rgba(255, 255, 255, .3); */
+		/* 	background: rgba(255, 255, 255, var(--3)); */
 		border-radius: 15px;
 	}
 	div.collectBlock p.collectModify
@@ -1012,75 +1099,75 @@
 	}
 	textarea#content
 	{
-		background: rgba(255, 255, 255, .5)!important;
+		background: rgba(255, 255, 255, var(--5))!important;
 	}
 	.modifyTool
 	{
-		opacity: 0.9;
+		opacity: var(--9);
 	}
 	div#footer ul#footerLinks
 	{
-		opacity: 0.9;
+		opacity: var(--9);
 	}
 	#cluetip
 	{
-		opacity: 0.85;
+		opacity: var(--85);
 	}
 	#timeline ul li.tml_item .card
 	{
-		background: rgba(255, 255, 255, .6);
+		background: rgba(255, 255, 255, var(--6));
 	}
 	#timeline ul li.tml_item .card.card_tiny .container
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	ul.sideTpcList .row:nth-child(odd)
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	#comment_list .row:nth-child(odd)
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	#comment_list .row:nth-child(even)
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	.codeHighlight pre
 	{
-		background-color: rgba(255, 255, 255, .5)!important;
+		background-color: rgba(255, 255, 255, var(--5))!important;
 	}
 	.infobox_container .infobox_expand
 	{
-		background: rgba(255, 255, 255, .4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	.infobox_container .infobox_expand a:hover
 	{
-		background: rgba(245, 107, 155, .4);
+		background: rgba(245, 107, 155, var(--4));
 	}
 	#comment_list div.row_state
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	div.reply_highlight
 	{
-		background: rgba(255, 255, 255, .4)!important;
+		background: rgba(255, 255, 255, var(--4))!important;
 	}
 	#aboutTimeline ul.Events li.detail ul.column li
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	#aboutTimeline ul.Events li.intro p
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	#aboutTimeline
 	{
-		background: rgba(255, 255, 255, .4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	input.inputtext, textarea.reply
 	{
-		background: rgba(255, 255, 255, .5)!important;
+		background: rgba(255, 255, 255, var(--5))!important;
 	}
 	input.inputBtn, a.fancyBtn
 	{
@@ -1088,7 +1175,7 @@
 	}
 	#columnCrtBrowserA
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	#columnCrtBrowserA h3
 	{
@@ -1100,43 +1187,43 @@
 	}
 	#columnTimelineInnerWrapper ul.timelineTabs, #columnTimelineInnerB
 	{
-		background: rgba(255, 255, 255, .3);
+		background: rgba(255, 255, 255, var(--3));
 	}
 	#timeline ul li.tml_item .comment
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	#columnIntroB div.loginPanel
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	#columnIntroB div.loginPanel dt
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	#timeline ul li.tml_item .card:not(.card_tiny)
 	{
-		background: rgba(255, 255, 255, .4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	#timeline ul li.tml_item .card.card_tiny
 	{
-		background: rgba(255, 255, 255, .0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	#timeline ul li.tml_item .card.card_tiny .container
 	{
-		background: rgba(255, 255, 255, .4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	#timeline ul li.tml_item .card.card_tiny .container:hover
 	{
-		background: rgba(255, 255, 255, .6);
+		background: rgba(255, 255, 255, var(--6));
 	}
 	ul.sideTpcList .row:nth-child(odd), ul.sideTpcList .row:nth-child(2n)
 	{
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255, var(--0));
 	}
 	/*.mosaic-tile
 {
-	background:rgba(255, 255, 255, .4);
+	background:rgba(255, 255, 255, var(--4));
 }*/
 	rect[data-count="0"]
 	{
@@ -1144,55 +1231,63 @@
 	}
 	ul.secTab li a
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	ul.secTab li a:hover
 	{
-		background: rgba(255, 164, 189, .54);
+		background: rgba(255, 164, 189, 14);
 	}
 	#navNeue2 #navMenuNeue li a.chl
 	{
-		background: rgba(255, 255, 255, .5);
+		background: rgba(255, 255, 255, var(--5));
 	}
 	a.btnBlue, a.btnBlueSmall
 	{
-		background: rgba(255, 255, 255, .7);
+		background: rgba(255, 255, 255, var(--7));
 	}
 	a.btnBlue:hover, a.btnBlueSmall:hover
 	{
-		background: rgba(255, 114, 114, .41);
+		background: rgba(255, 114, 114, var(--4));
 	}
 	input.inputBtn:hover, a.fancyBtn:hover
 	{
-		background: rgba(255, 98, 130, .61);
+		background: rgba(255, 98, 130, var(--6));
 	}
 	.likes_grid .item
 	{
-		background: rgba(255, 255, 255, .6);
+		background: rgba(255, 255, 255, var(--6));
 	}
 	textarea.quick
 	{
-		background: rgba(255, 255, 255, .6);
+		background: rgba(255, 255, 255, var(--6));
 	}
 	textarea.quick:focus, textarea.reply:focus
 	{
-		background: rgba(255, 255, 255, .8);
+		background: rgba(255, 255, 255, var(--8));
 	}
 	#show-diff-view-side-by-side
 	{
-		background: rgba(255, 255, 255, .6);
+		background: rgba(255, 255, 255, var(--6));
 	}
 	.d2h-file-header, .d2h-code-side-linenumber
 	{
-		background: rgba(255, 255, 255, .6);
+		background: rgba(255, 255, 255, var(--6));
 	}
 	ul#infobox li.group_section
 	{
-		background: rgba(255, 255, 255, .4);
+		background: rgba(255, 255, 255, var(--4));
 	}
 	table.settings .tag_list li a
 	{
-		background: rgba(255, 255, 255, .8);
+		background: rgba(255, 255, 255, var(--8));
+	}
+	#sliderContainer
+	{
+		background: rgba(229, 229, 229, var(--5));
+	}
+	div.ui-widget-content
+	{
+		background: rgba(255, 255, 255, var(--7));
 	}
 }
 @-moz-document regexp("^https?://(bgm.tv|bangumi.tv|chii.in)/(group)/.+/members")
