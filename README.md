@@ -53,3 +53,9 @@ bangumi讨论帖：https://bgm.tv/rakuen/topic/group/367774
 <a><img src="preview/QvAtEgGFe21Kjof.png"></a>
 <a><img src="preview/YlhVbNLj2Su8oUK.png"></a>
 <a><img src="preview/ZQuaX45VkYP6rbt.png"></a>
+- [#8](https://bgm.tv/group/topic/367774#post_1950012)  
+- [#27](https://bgm.tv/group/topic/367774#post_2995952)
+- [#30](https://bgm.tv/group/topic/367774#post_3003047)
+- [#34](https://bgm.tv/group/topic/367774#post_3026742)
+- [#42](https://bgm.tv/group/topic/367774#post_3215626)
+- [#47](https://bgm.tv/group/topic/367774#post_3228068)
